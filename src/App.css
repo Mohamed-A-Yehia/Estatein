@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary-60: #722ff0;
+  --color-primary-65: #844df1;
+  --color-primary-70: #9667f3;
+  --color-primary-75: #a782f4;
+
+  --color-primary-90: #dccdfa;
+  --color-primary-95: #ede5fd;
+  --color-primary-97: #f4f0fd;
+  --color-primary-99: #fbfaff;
+
+  --color-white-90: #e3e3e7;
+  --color-white-95: #f1f1f3;
+  --color-white-97: #f7f7f8;
+  --color-white-99: #fcfcfd;
+
+  --color-grey-08: #141414;
+  --color-grey-10: #191919;
+  --color-grey-15: #262626;
+  --color-grey-20: #333333;
+
+  --color-grey-30: #4c4c4c;
+  --color-grey-40: #666666;
+  --color-grey-50: #808080;
+  --color-grey-60: #999999;
+
+  --font-urbanist: "Urbanist";
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("/fonts/Urbanist-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("/fonts/Urbanist-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("/fonts/Urbanist-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("/fonts/Urbanist-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
