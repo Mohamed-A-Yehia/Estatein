@@ -7,7 +7,7 @@ function Announcement() {
           Learn More
         </a>
       </p>
-      <button className="bg-grey-40 absolute right-4 cursor-pointer rounded-full px-4 py-2 opacity-80">
+      <button className="bg-grey-40 absolute right-4 cursor-pointer rounded-full px-2 py-1 opacity-80">
         &#x2715;
       </button>
     </div>
