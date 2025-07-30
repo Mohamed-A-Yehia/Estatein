@@ -1,6 +1,6 @@
 function Announcement() {
   return (
-    <div className="text-white-99 relative flex h-13 w-full items-center justify-center bg-[url('/images/announcement-bg.png')] bg-cover bg-center">
+    <div className="bg-grey-10 border-b-grey-20 relative flex h-16 w-full items-center justify-center border-b bg-[url('/images/announcement-bg.png')] bg-cover bg-center text-[18px] font-light text-white">
       <p>
         ✨ Discover Your Dream Property With Estatein{" "}
         <a href="" className="underline">
