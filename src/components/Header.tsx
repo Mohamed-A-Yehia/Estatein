@@ -1,11 +1,17 @@
 import { NavLink } from "react-router";
 import Announcement from "./Announcement";
 import Logo from "./Logo";
+import { useState } from "react";
+import MenuPhone from "./MenuPhone";
 
 function Header() {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+
   return (
     <>
       <Announcement />
+
+      {showMenu && <MenuPhone setShowMenu={setShowMenu} />}
 
       <header className="bg-grey-10 border-b-grey-20 border-b-1">
         <div className="m-auto flex h-23 items-center justify-between px-3 font-normal text-white md:container">
@@ -42,7 +48,8 @@ function Header() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="size-9"
+              className="size-9 cursor-pointer"
+              onClick={() => setShowMenu((showed) => !showed)}
             >
               <path
                 fillRule="evenodd"
