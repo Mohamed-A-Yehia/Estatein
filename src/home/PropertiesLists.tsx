@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
 import { LuBath, LuBedDouble } from "react-icons/lu";
 import { HiOutlineBuildingOffice } from "react-icons/hi2";
 import LinkButton from "../components/LinkButton";
 import PrevNextButtons from "../components/PrevNextButtons";
+import useDataSize from "../hooks/useDataSize";
 
 interface Property {
   id: string;
@@ -23,29 +23,13 @@ interface ListsProps {
 }
 
 function Lists({ properties }: ListsProps) {
-  const [index, setIndex] = useState(0);
-
-  const getVisibleCount = () => {
-    if (window.innerWidth >= 800) return 3;
-    return 1;
-  };
-
-  const [visibleCount, setVisibleCount] = useState(getVisibleCount());
-
-  useEffect(() => {
-    const handleResize = () => setVisibleCount(getVisibleCount());
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const maxIndex = Math.max(0, properties.length - visibleCount);
-  const start = Math.min(index, maxIndex);
-  const visible = properties.slice(start, start + visibleCount);
+  const { index, maxIndex, start, visibleItems, setIndex } =
+    useDataSize<Property>(properties);
 
   return (
-    <div className="relative w-full text-white">
+    <div className="text-white">
       <div className="flex gap-4 transition-all duration-300">
-        {visible.map((property) => (
+        {visibleItems.map((property) => (
           <div
             key={property.id}
             className="border-grey-20 flex w-full flex-col justify-between gap-3 rounded-md border-1 p-6 lg:w-1/3"
