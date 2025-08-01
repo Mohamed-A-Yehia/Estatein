@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router";
 import { LuBath, LuBedDouble } from "react-icons/lu";
 import { HiOutlineBuildingOffice } from "react-icons/hi2";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 interface Property {
   id: string;
@@ -84,49 +85,23 @@ function Lists({ properties }: ListsProps) {
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-around py-4">
+      <div className="flex items-center justify-around py-4 text-white">
         <button
-          className="bg-grey-15 rounded-full p-2.5"
+          className="bg-grey-15 cursor-pointer rounded-full p-2.5"
           onClick={() => setIndex((i) => Math.max(i - 1, 0))}
           disabled={start === 0}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
-            />
-          </svg>
+          <FaArrowLeft />
         </button>
         <p>
           0{index} of 0{maxIndex}
         </p>
         <button
-          className="bg-grey-15 rounded-full p-2.5"
+          className="bg-grey-15 cursor-pointer rounded-full p-2.5"
           onClick={() => setIndex((i) => Math.min(i + 1, maxIndex))}
           disabled={start === maxIndex}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m8.25 4.5 7.5 7.5-7.5 7.5"
-            />
-          </svg>
+          <FaArrowRight />
         </button>
       </div>
     </div>
