@@ -7,12 +7,12 @@ function TestimonialsSection() {
   const { isLoading, data } = useTestimonials();
 
   return (
-    <section className="m-auto p-5 pt-16 lg:container">
+    <section className="border-grey-15 m-auto border-b p-5 pt-16 pb-1 lg:container">
       <SectionIntro
         title="What Our Clients Say"
         description="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
       />
-      <BeatLoader color="#7520E9" size={50} />
+
       {isLoading ? (
         <BeatLoader color="#7520E9" size={50} />
       ) : (
