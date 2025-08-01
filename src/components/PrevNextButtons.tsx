@@ -10,7 +10,7 @@ interface props {
 
 function PrevNextButtons({ setIndex, start, index, maxIndex }: props) {
   return (
-    <>
+    <div className="flex items-center justify-around py-4 text-white">
       <button
         className="bg-grey-15 cursor-pointer rounded-full p-2.5"
         onClick={() =>
@@ -32,7 +32,7 @@ function PrevNextButtons({ setIndex, start, index, maxIndex }: props) {
       >
         <FaArrowRight />
       </button>
-    </>
+    </div>
   );
 }
 
