@@ -1,7 +1,7 @@
 import Lists from "./PropertiesLists";
-import { PuffLoader } from "react-spinners";
 import SectionIntro from "../components/SectionIntro";
 import { useProperties } from "../hooks/useProperties";
+import { BeatLoader } from "react-spinners";
 
 function PropertiesSection() {
   const { isLoading, data } = useProperties();
@@ -16,7 +16,7 @@ function PropertiesSection() {
       />
 
       {isLoading ? (
-        <PuffLoader color="#7520E9" size={100} />
+        <BeatLoader color="#7520E9" size={100} />
       ) : (
         <Lists properties={data} />
       )}
