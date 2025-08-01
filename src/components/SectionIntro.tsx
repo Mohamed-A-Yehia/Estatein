@@ -3,16 +3,19 @@ import { CiStar } from "react-icons/ci";
 type props = {
   title: string;
   description: string;
+  stars: boolean;
 };
 
-function SectionIntro({ title, description }: props) {
+function SectionIntro({ title, description, stars = true }: props) {
   return (
     <>
-      <div className="flex items-center">
-        <CiStar className="text-grey-20 text-4xl" />
-        <CiStar className="text-grey-20 text-3xl" />
-        <CiStar className="text-grey-20 text-2xl" />
-      </div>
+      {stars && (
+        <div className="flex items-center">
+          <CiStar className="text-grey-20 text-4xl" />
+          <CiStar className="text-grey-20 text-3xl" />
+          <CiStar className="text-grey-20 text-2xl" />
+        </div>
+      )}
       <div className="mb-10 sm:mb-10">
         <h2 className="my-3 text-2xl font-semibold text-white md:text-4xl">
           {title}
