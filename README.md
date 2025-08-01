@@ -24,3 +24,28 @@ Sleek and modern real estate website designed to help users explore and find the
 ## 📁 Folder Structure:
 
 > Under Development
+
+```
+├── public
+│ ├── data
+│ ├── fonts
+│ ├── images
+│
+└── src
+├── assets
+│ ├── fonts
+│ └── images
+│
+├── components
+│
+├── context
+│
+├── home
+│ ├── HeroSection.tsx
+│
+├── hooks
+│
+├── App.css
+├── App.tsx
+└── main.tsx
+```
