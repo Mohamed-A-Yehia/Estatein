@@ -71,12 +71,12 @@ function Lists({ properties }: ListsProps) {
                 <p>{property.type}</p>
               </div>
             </div>
-            <div className="flex content-end items-center justify-between md:flex-col md:items-start md:gap-2.5">
+            <div className="flex flex-wrap items-center justify-between gap-3 md:flex-row md:items-start md:gap-2.5">
               <p className="text-grey-60">
                 Price<span className="block text-white">{property.price}</span>
               </p>
               <NavLink
-                className="bg-primary-60 rounded-md p-2.5 text-[16px]"
+                className="bg-primary-60 rounded-md p-2 text-[16px] sm:p-2.5"
                 to="/"
               >
                 View Property Details
