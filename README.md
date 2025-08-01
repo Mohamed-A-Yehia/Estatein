@@ -6,14 +6,20 @@ Sleek and modern real estate website designed to help users explore and find the
 [Live Preview](https://estatein-ma.netlify.app/)
 
 ---
+
 ## 🛠 Tech Stack
-- **React.js** – Of course
-- **TypeScript** – For Typing Safety
-- **React Router** – For Client-side Routing
-- **Tailwind CSS** - I Love It
-> There's More Coming.. ~_~
+
+- **React.js** – Of course.
+- **TypeScript** – For Typing Safety.
+- **React Router** – For Client-side Routing.
+- **Tailwind CSS** - I Love It.
+- **Axios** - Progress Tracking, Better Error Handling and more..
+- **React-Icons** - The Best Icon That Makes Your Code Clean.
+
+  > There's More Coming.. ~\_~
 
 ---
+
 ## 📁 Folder Structure:
 
 > Under Development
