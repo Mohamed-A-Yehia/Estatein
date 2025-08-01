@@ -1,6 +1,6 @@
 import axios from "axios";
 import type { ReactNode } from "react";
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 interface Property {
   id: string;
@@ -16,12 +16,12 @@ interface Property {
   type: string;
 }
 
-interface DataContextType {
+interface PropertiesContextType {
   data: Property[];
   isLoading: boolean;
 }
 
-const DataContext = createContext<DataContextType | null>(null);
+const PropertiesContext = createContext<PropertiesContextType | null>(null);
 
 function DataProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState([]);
@@ -42,19 +42,10 @@ function DataProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <DataContext.Provider value={{ data, isLoading }}>
+    <PropertiesContext.Provider value={{ data, isLoading }}>
       {children}
-    </DataContext.Provider>
+    </PropertiesContext.Provider>
   );
 }
 
-function useData() {
-  const context = useContext(DataContext);
-  if (!context) {
-    throw new Error("useData must be used within a DataProvider");
-  }
-  return context;
-}
-
-// eslint-disable-next-line react-refresh/only-export-components
-export { DataProvider, useData };
+export { DataProvider, PropertiesContext };

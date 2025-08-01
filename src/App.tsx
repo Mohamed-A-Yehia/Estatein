@@ -3,7 +3,8 @@ import "./App.css";
 import AppLayout from "./components/AppLayout";
 import Home from "./home/Home";
 import Error from "./components/Error";
-import { DataProvider } from "./context/DataProvider";
+import { DataProvider } from "./context/PropertiesData";
+import { TestimonialsData } from "./context/TestimonialsData";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <DataProvider>
-      <RouterProvider router={router} />
+      <TestimonialsData>
+        <RouterProvider router={router} />
+      </TestimonialsData>
     </DataProvider>
   );
 }
