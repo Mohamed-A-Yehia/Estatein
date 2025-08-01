@@ -3,7 +3,7 @@ import { CiStar } from "react-icons/ci";
 type props = {
   title: string;
   description: string;
-  stars: boolean;
+  stars?: boolean;
 };
 
 function SectionIntro({ title, description, stars = true }: props) {
