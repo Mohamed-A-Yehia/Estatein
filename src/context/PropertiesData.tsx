@@ -35,7 +35,10 @@ function DataProvider({ children }: { children: ReactNode }) {
           setData(response.data.properties);
           setIsLoading(false);
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          console.error(`ERROR: ${error}`);
+          setIsLoading(false);
+        });
     } catch (error) {
       throw new Error(`ERROR: ${error}`);
     }

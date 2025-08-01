@@ -5,7 +5,7 @@ interface Testimonials {
   name: string;
   location: string;
   rating: number;
-  testimonials: string;
+  testimonial: string;
 }
 
 interface TestimonialsContextType {
@@ -17,14 +17,20 @@ const TestimonialsContext = createContext<TestimonialsContextType | null>(null);
 
 function TestimonialsData({ children }: { children: ReactNode }) {
   const [data, setData] = useState([]);
-  const [isLoading, setIsloading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     try {
-      axios.get("/data/testimonial.json").then((response) => {
-        setData(response.data.testimonials);
-        setIsloading(false);
-      });
+      axios
+        .get("/data/testimonial.json")
+        .then((response) => {
+          setData(response.data.testimonials);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error(`ERROR: ${error}`);
+          setIsLoading(false);
+        });
     } catch (error) {
       throw new Error(`ERROR: ${error}`);
     }
