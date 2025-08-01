@@ -1,0 +1,64 @@
+{
+  "testimonials": [
+    {
+      "name": "Wade Warren",
+      "location": "USA, California",
+      "rating": 5,
+      "testimonial": "Exceptional Service! Our experience with Estaten was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommend!"
+    },
+    {
+      "name": "Emelle Thomson",
+      "location": "USA, Florida",
+      "rating": 4,
+      "testimonial": "Efficient and Reliable! Estaten provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results."
+    },
+    {
+      "name": "John Mans",
+      "location": "USA, Nevada",
+      "rating": 5,
+      "testimonial": "Trusted Advisors! The Estaten team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!"
+    },
+    {
+      "name": "Jane Doe",
+      "location": "USA, Texas",
+      "rating": 5,
+      "testimonial": "Outstanding Support! Estaten made our home purchase seamless. Their attention to detail and expert advice were invaluable. Highly recommended!"
+    },
+    {
+      "name": "Robert Smith",
+      "location": "USA, New York",
+      "rating": 4,
+      "testimonial": "Great Experience! The team at Estaten was professional and responsive. They helped us find the perfect property in record time. Very satisfied!"
+    },
+    {
+      "name": "Sarah Johnson",
+      "location": "USA, Oregon",
+      "rating": 5,
+      "testimonial": "Amazing Service! Estaten exceeded our expectations with their personalized approach. Finding our new home was a delight thanks to their expertise."
+    },
+    {
+      "name": "Michael Brown",
+      "location": "USA, Arizona",
+      "rating": 4,
+      "testimonial": "Reliable Team! Estaten's quick response and market knowledge helped us sell our house fast. A truly professional service!"
+    },
+    {
+      "name": "Emily Davis",
+      "location": "USA, Colorado",
+      "rating": 5,
+      "testimonial": "Top-Notch Guidance! The Estaten team was fantastic in helping us navigate the real estate market. Their dedication is unmatched!"
+    },
+    {
+      "name": "David Wilson",
+      "location": "USA, Georgia",
+      "rating": 4,
+      "testimonial": "Solid Service! Estaten provided clear advice and support throughout our property search. Great results in the end!"
+    },
+    {
+      "name": "Lisa Anderson",
+      "location": "USA, Washington",
+      "rating": 5,
+      "testimonial": "Exceptional Team! Estaten's expertise and care made our home-buying journey stress-free. Highly recommend to anyone!"
+    }
+  ]
+}
