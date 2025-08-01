@@ -52,6 +52,7 @@ function Lists({ properties }: ListsProps) {
           >
             <img
               src={property.imageUrl}
+              loading="lazy"
               alt={property.title}
               className="w-full rounded-md"
             />

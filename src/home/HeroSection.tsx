@@ -1,5 +1,5 @@
 import { FaBuilding, FaHome } from "react-icons/fa";
-import heroImg from "../assets/hero-image.png";
+import heroImg from "../assets/hero-image.webp";
 import { FaTableCellsRowUnlock } from "react-icons/fa6";
 import { FiSun } from "react-icons/fi";
 import LinkButton from "../components/LinkButton";
