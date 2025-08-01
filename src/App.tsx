@@ -5,6 +5,7 @@ import Home from "./home/Home";
 import Error from "./components/Error";
 import { DataProvider } from "./context/PropertiesData";
 import { TestimonialsData } from "./context/TestimonialsData";
+import { FaqsProvider } from "./context/FaqsData";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,9 @@ function App() {
   return (
     <DataProvider>
       <TestimonialsData>
-        <RouterProvider router={router} />
+        <FaqsProvider>
+          <RouterProvider router={router} />
+        </FaqsProvider>
       </TestimonialsData>
     </DataProvider>
   );
