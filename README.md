@@ -15,6 +15,7 @@ Sleek and modern real estate website designed to help users explore and find the
 - **Tailwind CSS** - I Love It.
 - **Axios** - Progress Tracking, Better Error Handling and more..
 - **React-Icons** - The Best Icon That Makes Your Code Clean.
+- **React-Spinners** - For Better UX.
 
 > There's More Coming.. ~\_~
 

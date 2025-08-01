@@ -1,4 +1,4 @@
-import Lists from "../components/Lists";
+import Lists from "./PropertiesLists";
 import { useData } from "../context/DataProvider";
 import { PuffLoader } from "react-spinners";
 

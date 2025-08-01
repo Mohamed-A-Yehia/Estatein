@@ -2,6 +2,7 @@ import { FaBuilding, FaHome } from "react-icons/fa";
 import heroImg from "../assets/hero-image.png";
 import { FaTableCellsRowUnlock } from "react-icons/fa6";
 import { FiSun } from "react-icons/fi";
+import LinkButton from "../components/LinkButton";
 
 function HeroSection() {
   return (
@@ -18,12 +19,12 @@ function HeroSection() {
             </p>
           </div>
           <div className="mt-10 flex flex-col justify-center gap-4 text-white md:flex-row md:gap-8 lg:justify-start xl:mt-12">
-            <button className="bg-grey-15 border-grey-20 cursor-pointer rounded-md border-1 p-3">
+            <LinkButton to="" buttonType="">
               Learn More
-            </button>
-            <button className="bg-primary-60 cursor-pointer rounded-md p-3">
+            </LinkButton>
+            <LinkButton to="" buttonType="primary">
               Browse Properties
-            </button>
+            </LinkButton>
           </div>
           <div className="mt-10 mb-5 grid grid-cols-2 justify-center gap-2.5 text-center md:flex lg:mt-12 lg:justify-start xl:gap-5">
             <div className="bg-grey-10 text-grey-60 border-grey-20 rounded-md border-1 px-7 py-3.5">
