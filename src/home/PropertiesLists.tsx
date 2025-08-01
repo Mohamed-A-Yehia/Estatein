@@ -98,5 +98,3 @@ function Lists({ properties }: ListsProps) {
 }
 
 export default Lists;
-
-// grid gap-3 overflow-hidden md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3
