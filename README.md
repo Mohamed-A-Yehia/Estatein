@@ -35,16 +35,10 @@ Sleek and modern real estate website designed to help users explore and find the
 ├── assets
 │ ├── fonts
 │ └── images
-│
 ├── components
-│
 ├── context
-│
 ├── home
-│ ├── HeroSection.tsx
-│
 ├── hooks
-│
 ├── App.css
 ├── App.tsx
 └── main.tsx
