@@ -1,30 +1,28 @@
 import axios from "axios";
 import { createContext, useEffect, useState, type ReactNode } from "react";
 
-interface Testimonials {
-  name: string;
-  location: string;
-  rating: number;
-  testimonial: string;
+interface Faqs {
+  question: string;
+  answer: string;
 }
 
-interface TestimonialsContextType {
-  data: Testimonials[];
+interface FaqsContextType {
+  data: Faqs[];
   isLoading: boolean;
 }
 
-const TestimonialsContext = createContext<TestimonialsContextType | null>(null);
+const FaqsContext = createContext<FaqsContextType | null>(null);
 
-function TestimonialsData({ children }: { children: ReactNode }) {
+function FaqsProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
+  useEffect(function () {
     try {
       axios
-        .get("/data/testimonial.json")
+        .get("/data/faqs.json")
         .then((response) => {
-          setData(response.data.testimonials);
+          setData(response.data.faqs);
         })
         .catch((error) => {
           console.error(`ERROR: ${error}`);
@@ -38,10 +36,10 @@ function TestimonialsData({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <TestimonialsContext.Provider value={{ data, isLoading }}>
+    <FaqsContext.Provider value={{ isLoading, data }}>
       {children}
-    </TestimonialsContext.Provider>
+    </FaqsContext.Provider>
   );
 }
 
-export { TestimonialsData, TestimonialsContext };
+export { FaqsProvider, FaqsContext };

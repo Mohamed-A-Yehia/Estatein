@@ -33,10 +33,11 @@ function DataProvider({ children }: { children: ReactNode }) {
         .get("/data/properties.json")
         .then((response) => {
           setData(response.data.properties);
-          setIsLoading(false);
         })
         .catch((error) => {
           console.error(`ERROR: ${error}`);
+        })
+        .finally(() => {
           setIsLoading(false);
         });
     } catch (error) {

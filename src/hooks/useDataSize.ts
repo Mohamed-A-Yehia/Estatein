@@ -18,7 +18,8 @@ function useDataSize<T>(
   const [index, setIndex] = useState(0);
 
   const getVisibleCount = () => {
-    if (window.innerWidth >= 800) return initialVisibleCount || 3;
+    if (window.innerWidth >= 1024) return initialVisibleCount || 3;
+    if (window.innerWidth >= 768) return initialVisibleCount || 2;
     return initialVisibleCount || 1;
   };
 
