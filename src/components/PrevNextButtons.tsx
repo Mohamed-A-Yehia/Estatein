@@ -1,8 +1,7 @@
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 interface props {
-  children: string;
-  setIndex: (i: unknown) => number;
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
   start: number;
   maxIndex: number;
   index: number;
@@ -23,7 +22,7 @@ function PrevNextButtons({ setIndex, start, index, maxIndex }: props) {
       </p>
       <button
         className="bg-grey-15 cursor-pointer rounded-full p-2.5"
-        onClick={() => setIndex((i: number) => Math.min(i + 1, maxIndex))}
+        onClick={() => setIndex((i) => Math.min(i + 1, maxIndex))}
         disabled={start === maxIndex}
       >
         <FaArrowRight />
