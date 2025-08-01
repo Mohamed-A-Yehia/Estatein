@@ -16,7 +16,7 @@ Sleek and modern real estate website designed to help users explore and find the
 - **Axios** - Progress Tracking, Better Error Handling and more..
 - **React-Icons** - The Best Icon That Makes Your Code Clean.
 
-  > There's More Coming.. ~\_~
+> There's More Coming.. ~\_~
 
 ---
 
