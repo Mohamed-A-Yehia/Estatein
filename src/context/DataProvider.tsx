@@ -28,13 +28,17 @@ function DataProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    axios
-      .get("/data/properties.json")
-      .then((response) => {
-        setData(response.data.properties);
-        setIsLoading(false);
-      })
-      .catch((error) => console.log(error));
+    try {
+      axios
+        .get("/data/properties.json")
+        .then((response) => {
+          setData(response.data.properties);
+          setIsLoading(false);
+        })
+        .catch((error) => console.log(error));
+    } catch (error) {
+      throw new Error(`ERROR: ${error}`);
+    }
   }, []);
 
   return (
