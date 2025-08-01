@@ -42,14 +42,12 @@ function Testimonials({ testimonials }: TestimonialsProps) {
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-around py-4 text-white">
-        <PrevNextButtons
-          maxIndex={maxIndex}
-          setIndex={setIndex}
-          start={start}
-          index={index}
-        />
-      </div>
+      <PrevNextButtons
+        maxIndex={maxIndex}
+        setIndex={setIndex}
+        start={start}
+        index={index}
+      />
     </div>
   );
 }
