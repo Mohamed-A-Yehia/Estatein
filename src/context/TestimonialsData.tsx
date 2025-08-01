@@ -22,9 +22,8 @@ function TestimonialsData({ children }: { children: ReactNode }) {
   useEffect(() => {
     try {
       axios.get("/data/testimonial.json").then((response) => {
-        setData(response.data.testimonial);
+        setData(response.data.testimonials);
         setIsloading(false);
-        console.log(response.data.testimonial);
       });
     } catch (error) {
       throw new Error(`ERROR: ${error}`);
