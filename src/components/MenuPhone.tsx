@@ -5,29 +5,55 @@ type props = {
 };
 
 function MenuPhone({ setShowMenu }: props) {
+  const activeLink: string =
+    "bg-grey-08 border-grey-20 rounded-md border-1 px-5 py-2.5";
+
   return (
-    <header className="relative">
+    <header className="relative z-10">
       <nav className="absolute m-auto flex min-h-screen w-full items-center justify-center px-3 font-normal text-white backdrop-blur-2xl">
         <ul className="flex flex-col items-center gap-6">
           <li>
             <NavLink
               to="/"
-              className="bg-grey-08 border-grey-20 rounded-md border-1 px-5 py-3"
+              onClick={() => setShowMenu((showed) => !showed)}
+              className={({ isActive }) => (isActive ? activeLink : "")}
             >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about-us">About Us</NavLink>
+            <NavLink
+              to="/about-us"
+              onClick={() => setShowMenu((showed) => !showed)}
+              className={({ isActive }) => (isActive ? activeLink : "")}
+            >
+              About Us
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/properties">Properties</NavLink>
+            <NavLink
+              to="/properties"
+              onClick={() => setShowMenu((showed) => !showed)}
+              className={({ isActive }) => (isActive ? activeLink : "")}
+            >
+              Properties
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/services">Services</NavLink>
+            <NavLink
+              to="/services"
+              onClick={() => setShowMenu((showed) => !showed)}
+              className={({ isActive }) => (isActive ? activeLink : "")}
+            >
+              Services
+            </NavLink>
           </li>
           <li>
-            <NavLink to="contact-us" className="md:block">
+            <NavLink
+              to="contact-us"
+              onClick={() => setShowMenu((showed) => !showed)}
+              className="md:block"
+            >
               Contact Us
             </NavLink>
           </li>
