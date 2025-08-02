@@ -6,6 +6,8 @@ import MenuPhone from "./MenuPhone";
 
 function Header() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const activeLink: string =
+    "bg-grey-08 border-grey-20 rounded-md border-1 px-5 py-2.5";
 
   return (
     <>
@@ -21,19 +23,34 @@ function Header() {
               <li>
                 <NavLink
                   to="/"
-                  className="bg-grey-08 border-grey-20 rounded-md border-1 px-5 py-3"
+                  className={({ isActive }) => (isActive ? activeLink : "")}
                 >
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about-us">About Us</NavLink>
+                <NavLink
+                  to="/about-us"
+                  className={({ isActive }) => (isActive ? activeLink : "")}
+                >
+                  About Us
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/properties">Properties</NavLink>
+                <NavLink
+                  to="/properties"
+                  className={({ isActive }) => (isActive ? activeLink : "")}
+                >
+                  Properties
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/services">Services</NavLink>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) => (isActive ? activeLink : "")}
+                >
+                  Services
+                </NavLink>
               </li>
             </ul>
           </nav>

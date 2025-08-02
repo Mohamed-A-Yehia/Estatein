@@ -1,5 +1,5 @@
 import { MdOutlineEmail } from "react-icons/md";
-import Link from "./Link";
+import NormalLink from "./NormalLink";
 import Logo from "./Logo";
 import { IoIosSend } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
@@ -31,75 +31,75 @@ function Footer() {
         <div className="grid grid-cols-2 gap-5 self-start pt-10 text-white sm:grid-cols-5 sm:grid-rows-1">
           <div className="border-grey-15 flex flex-col gap-2 border-b pb-4 text-white sm:border-0">
             <p className="text-grey-60 font-medium">Home</p>
-            <Link to="" buttonType="">
+            <NormalLink to="" buttonType="">
               Hero Section
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Features
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Properties
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Testimonials
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               FAQ's
-            </Link>
+            </NormalLink>
           </div>
           <div className="border-grey-15 flex flex-col gap-2 border-b pb-4 text-white sm:border-0">
             <p className="text-grey-60 font-medium">About Us</p>
-            <Link to="" buttonType="">
+            <NormalLink to="" buttonType="">
               Our Story
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Our Works
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               How It Works
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Our Team
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Our Clients
-            </Link>
+            </NormalLink>
           </div>
           <div className="flex flex-col gap-2 pb-4 text-white">
             <p className="text-grey-60 font-medium">Properties</p>
-            <Link to="" buttonType="">
+            <NormalLink to="" buttonType="">
               Portfolio
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Categories
-            </Link>
+            </NormalLink>
           </div>
           <div className="border-grey-15 flex flex-col gap-2 border-b pb-4 text-white md:border-0">
             <p className="text-grey-60 font-medium">Services</p>
-            <Link to="" buttonType="">
+            <NormalLink to="" buttonType="">
               Valuation Mastery
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Strategic Marketing
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Negotiation Wizardry
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Closing Success
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Property Management
-            </Link>
+            </NormalLink>
           </div>
           <div className="border-grey-15 mt-[-95px] flex flex-col gap-2 border-t border-b py-4 text-white sm:mt-0 sm:border-0 md:py-0">
             <p className="text-grey-60 font-medium">Contact Us</p>
-            <Link to="" buttonType="">
+            <NormalLink to="" buttonType="">
               Contect Form
-            </Link>
-            <Link to="" buttonType="">
+            </NormalLink>
+            <NormalLink to="" buttonType="">
               Our Offices
-            </Link>
+            </NormalLink>
           </div>
         </div>
       </footer>
