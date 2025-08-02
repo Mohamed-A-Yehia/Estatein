@@ -9,13 +9,13 @@ type props = {
 function LinkButton({ children, buttonType = "", to }: props) {
   const color =
     buttonType === "primary"
-      ? "bg-primary-60"
+      ? "bg-primary-60 "
       : "bg-grey-15 border-grey-20 border-1";
 
   return (
     <NavLink
       to={to}
-      className={`${color} cursor-pointer rounded-md p-3 text-center text-[16px] sm:text-lg`}
+      className={`${color} cursor-pointer rounded-md p-3 text-center text-[16px] text-white sm:text-lg`}
     >
       {children}
     </NavLink>

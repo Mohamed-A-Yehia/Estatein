@@ -1,3 +1,4 @@
+import CtaSection from "./CtaSection";
 import FaqSection from "./FaqSection";
 import HeroSection from "./HeroSection";
 import PropertiesSection from "./PropertiesSection";
@@ -10,6 +11,7 @@ function Home() {
       <PropertiesSection />
       <TestimonialsSection />
       <FaqSection />
+      <CtaSection />
     </>
   );
 }
