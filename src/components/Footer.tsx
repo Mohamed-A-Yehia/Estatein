@@ -103,22 +103,24 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div className="bg-grey-10 flex items-center justify-center gap-2.5 py-2.5 text-center text-white">
+      <div className="bg-grey-10 flex flex-col items-center justify-center gap-3 py-5 text-center text-white">
         <p>Created By Mohamed Ahmed</p>
-        <a
-          className="rounded-md bg-white text-3xl text-blue-500"
-          href="https://www.linkedin.com/in/mohamed-ahmed-6a6bb3338/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className="text-3xl"
-          href="https://github.com/Mohamed-A-Yehia"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+        <div className="flex gap-5 text-2xl">
+          <a
+            className="bg-grey-15 hover:bg-grey-20 rounded-full p-3"
+            href="https://www.linkedin.com/in/mohamed-ahmed-6a6bb3338/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="bg-grey-15 hover:bg-grey-20 rounded-full p-3"
+            href="https://github.com/Mohamed-A-Yehia"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </div>
     </>
   );
