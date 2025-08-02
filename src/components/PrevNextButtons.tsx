@@ -12,6 +12,7 @@ function PrevNextButtons({ setIndex, start, index, maxIndex }: props) {
   return (
     <div className="flex items-center justify-around py-4 text-white">
       <button
+        aria-label="next"
         className="bg-grey-15 cursor-pointer rounded-full p-2.5"
         onClick={() =>
           setIndex((prevIndex) => Math.min(prevIndex - 1, maxIndex))
@@ -24,6 +25,7 @@ function PrevNextButtons({ setIndex, start, index, maxIndex }: props) {
         {index + 1} of {maxIndex + 1}
       </p>
       <button
+        aria-label="previous"
         className="bg-grey-15 cursor-pointer rounded-full p-2.5"
         onClick={() =>
           setIndex((prevIndex) => Math.min(prevIndex + 1, maxIndex))
