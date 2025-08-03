@@ -16,8 +16,9 @@ function Footer() {
               type="email"
               name="Email"
               placeholder="Enter Your Email"
-              id=""
-              className="border-grey-15 focus:outline-grey-20 mt-5 w-80 rounded-lg border py-2.5 pl-11 focus:bg-transparent focus:outline"
+              id="footer-email"
+              autoComplete="email"
+              className="border-grey-15 focus:outline-grey-20 mt-5 w-60 rounded-lg border py-2.5 pl-11 focus:bg-transparent focus:outline sm:w-80"
             />
             <MdOutlineEmail
               size={30}
