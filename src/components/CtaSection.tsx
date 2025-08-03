@@ -1,8 +1,6 @@
 import LinkButton from "../components/LinkButton";
 import SectionIntro from "../components/SectionIntro";
 
-// bg-[url('/images/CtaSectionBgC.webp')] bg-cover bg-center
-
 function CtaSection() {
   return (
     <section className="border-grey-15 m-auto border-b bg-[url('/images/CtaSectionBgC.webp')] bg-cover bg-center p-5 pt-16 lg:container">

@@ -14,7 +14,7 @@ function SectionIntro({
   fontsize = "text-2xl",
 }: props) {
   return (
-    <>
+    <div className="w-fit">
       {stars && (
         <div className="flex items-center">
           <CiStar className="text-grey-20 text-4xl" />
@@ -22,7 +22,7 @@ function SectionIntro({
           <CiStar className="text-grey-20 text-2xl" />
         </div>
       )}
-      <div className="mb-10 sm:mb-10 md:max-w-[75%]">
+      <div className="mb-10 max-w-fit sm:mb-10 md:max-w-[700px] lg:max-w-[800px]">
         <h2 className={`my-3 ${fontsize} font-semibold text-white md:text-4xl`}>
           {title}
         </h2>
@@ -30,7 +30,7 @@ function SectionIntro({
           {description}
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

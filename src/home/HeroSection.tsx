@@ -1,8 +1,11 @@
 import { FaBuilding, FaHome } from "react-icons/fa";
-import heroImg from "../assets/hero-image.webp";
+import heroDesktop from "../assets/hero-image.webp";
+import heroLaptop from "../assets/hero-laptop.webp";
+import heroPhone from "../assets/hero-phone.webp";
 import { FaTableCellsRowUnlock } from "react-icons/fa6";
 import { FiSun } from "react-icons/fi";
 import LinkButton from "../components/LinkButton";
+import Staticts from "../components/Staticts";
 
 function HeroSection() {
   return (
@@ -26,32 +29,23 @@ function HeroSection() {
               Browse Properties
             </LinkButton>
           </div>
-          <div className="mt-10 mb-5 grid grid-cols-2 justify-center gap-2.5 text-center md:flex lg:mt-12 lg:justify-start xl:gap-5">
-            <div className="bg-grey-10 text-grey-60 border-grey-20 rounded-md border-1 px-7 py-3.5">
-              <span className="block text-3xl font-medium text-white">
-                200+
-              </span>
-              Happy Customers
-            </div>
-            <div className="bg-grey-10 text-grey-60 border-grey-20 rounded-md border-1 px-7 py-3.5">
-              <span className="block text-3xl font-medium text-white">
-                10k+
-              </span>
-              Properties For Clients
-            </div>
-            <div className="bg-grey-10 text-grey-60 border-grey-20 col-span-2 rounded-md border-1 px-7 py-3.5">
-              <span className="block text-3xl font-medium text-white">16+</span>
-              Years Of Experience
-            </div>
-          </div>
+          <Staticts />
         </div>
         <div className="bg-grey-15 row-span-full w-full lg:row-auto">
-          <img
-            src={heroImg}
-            alt="Estate Image"
-            fetchPriority="high"
-            className="w-full"
-          />
+          <picture>
+            <source media="(max-width: 449px)" srcSet={heroPhone} />
+            <source
+              media="(min-width: 450px) and (max-width: 768px)"
+              srcSet={heroLaptop}
+            />
+            <source media="(min-width: 770px)" srcSet={heroDesktop} />
+            <img
+              src={heroDesktop}
+              alt="Estate Image"
+              fetchPriority="high"
+              className="w-full"
+            />
+          </picture>
         </div>
       </div>
       <div className="border-grey-10 grid grid-cols-2 gap-2.5 border-8 p-2.5 text-center lg:grid-cols-4 lg:gap-5 lg:p-5">
