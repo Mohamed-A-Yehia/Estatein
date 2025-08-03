@@ -24,7 +24,10 @@ function Footer() {
               size={30}
               className="text-grey-60 absolute top-7 left-2.5"
             />
-            <button className="absolute top-7 right-2.5 cursor-pointer text-white">
+            <button
+              className="absolute top-7 right-2.5 cursor-pointer text-white"
+              aria-label="send email"
+            >
               <IoIosSend size={30} />
             </button>
           </div>
@@ -108,6 +111,7 @@ function Footer() {
         <p>Created By Mohamed Ahmed</p>
         <div className="flex gap-5 text-2xl">
           <a
+            aria-label="Go To My LinkedIn"
             className="bg-grey-15 hover:bg-grey-20 rounded-full p-3"
             href="https://www.linkedin.com/in/mohamed-ahmed-6a6bb3338/"
             target="_blank"
@@ -115,6 +119,7 @@ function Footer() {
             <BsLinkedin />
           </a>
           <a
+            aria-label="Go To My GutHub"
             className="bg-grey-15 hover:bg-grey-20 rounded-full p-3"
             href="https://github.com/Mohamed-A-Yehia"
             target="_blank"
