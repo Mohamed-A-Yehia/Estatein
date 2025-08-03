@@ -63,9 +63,3 @@
 * {
   transition: 0.3s;
 }
-
-.cta-background {
-  background-image: url(./assets/CtaSectionBgC.png);
-  background-size: cover;
-  background-position: center;
-}

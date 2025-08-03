@@ -1,9 +1,11 @@
 import LinkButton from "../components/LinkButton";
 import SectionIntro from "../components/SectionIntro";
 
+// bg-[url('/images/CtaSectionBgC.webp')] bg-cover bg-center
+
 function CtaSection() {
   return (
-    <section className="cta-background border-grey-15 m-auto border-b p-5 pt-16 lg:container">
+    <section className="border-grey-15 m-auto border-b bg-[url('/images/CtaSectionBgC.webp')] bg-cover bg-center p-5 pt-16 lg:container">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
         <SectionIntro
           title="Start Your Real Estate Journey Today"
