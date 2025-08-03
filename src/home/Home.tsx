@@ -1,4 +1,4 @@
-import CtaSection from "./CtaSection";
+import CtaSection from "../components/CtaSection";
 import FaqSection from "./FaqSection";
 import HeroSection from "./HeroSection";
 import PropertiesSection from "./PropertiesSection";
