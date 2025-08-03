@@ -1,5 +1,5 @@
 import { FaBuilding, FaHome } from "react-icons/fa";
-// import heroImg from "../assets/hero-image.webp";
+import heroImg from "../assets/hero-image.webp";
 import { FaTableCellsRowUnlock } from "react-icons/fa6";
 import { FiSun } from "react-icons/fi";
 import LinkButton from "../components/LinkButton";
@@ -47,7 +47,7 @@ function HeroSection() {
         </div>
         <div className="bg-grey-15 row-span-full w-full lg:row-auto">
           <img
-            src="/images/hero-image.webp"
+            src={heroImg}
             alt="Estate Image"
             fetchPriority="high"
             className="w-full"
