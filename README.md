@@ -13,7 +13,6 @@ Sleek and modern real estate website designed to help users explore and find the
 - **TypeScript** – For Typing Safety.
 - **React Router** – For Client-side Routing.
 - **Tailwind CSS** - I Love It.
-- **Axios** - Progress Tracking, Better Error Handling and more..
 - **React-Icons** - The Best Icon That Makes Your Code Clean.
 - **React-Spinners** - For Better UX.
 
