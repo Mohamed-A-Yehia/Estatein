@@ -29,7 +29,7 @@ function HeaderNav() {
           </li>
           <li>
             <NavLink
-              to="/about-us"
+              to="/aboutus"
               onClick={() => setShowMenu((showed) => !showed)}
               className={({ isActive }) => (isActive ? activeLink : "")}
             >
