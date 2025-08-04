@@ -21,7 +21,6 @@ function HeaderNav() {
           <li>
             <NavLink
               to="/"
-              onClick={() => setShowMenu((showed) => !showed)}
               className={({ isActive }) => (isActive ? activeLink : "")}
             >
               Home
@@ -30,7 +29,6 @@ function HeaderNav() {
           <li>
             <NavLink
               to="/aboutus"
-              onClick={() => setShowMenu((showed) => !showed)}
               className={({ isActive }) => (isActive ? activeLink : "")}
             >
               About Us
@@ -39,7 +37,6 @@ function HeaderNav() {
           <li>
             <NavLink
               to="/properties"
-              onClick={() => setShowMenu((showed) => !showed)}
               className={({ isActive }) => (isActive ? activeLink : "")}
             >
               Properties
@@ -48,7 +45,6 @@ function HeaderNav() {
           <li>
             <NavLink
               to="/services"
-              onClick={() => setShowMenu((showed) => !showed)}
               className={({ isActive }) => (isActive ? activeLink : "")}
             >
               Services
@@ -65,7 +61,7 @@ function HeaderNav() {
       </nav>
 
       <IoMenu
-        className="size-14 cursor-pointer pr-3 sm:pr-0 md:hidden"
+        className="size-14 cursor-pointer pr-3 sm:hidden sm:pr-0"
         onClick={() => setShowMenu((showed) => !showed)}
       />
     </>

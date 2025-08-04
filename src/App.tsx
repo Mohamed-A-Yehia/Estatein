@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { TestimonialsData } from "./context/TestimonialsData";
+import { DataProvider } from "./context/PropertiesData";
+import { FaqsProvider } from "./context/FaqsData";
 import "./App.css";
 import AppLayout from "./components/AppLayout";
 import Home from "./home/Home";
 import Error from "./components/Error";
-import { DataProvider } from "./context/PropertiesData";
-import { TestimonialsData } from "./context/TestimonialsData";
-import { FaqsProvider } from "./context/FaqsData";
 import AboutUs from "./aboutUsPage/AboutUs";
 import Properties from "./propertiesPage/Properties";
 import Services from "./servicesPage/Services";
