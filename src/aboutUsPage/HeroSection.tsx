@@ -7,7 +7,7 @@ import aboutPhone from "../assets/about-phone.webp";
 
 function HeroSection() {
   return (
-    <section className="border-grey-15 m-auto grid w-full grid-rows-2 flex-col items-center gap-10 border-b p-2.5 pt-8 pb-8 md:container md:grid-rows-1 lg:grid-cols-2 lg:gap-15 lg:pt-16 lg:pb-16">
+    <section className="m-auto grid w-full grid-rows-2 flex-col items-center gap-10 p-5 py-8 md:container md:grid-rows-1 md:p-0 lg:grid-cols-2 lg:gap-15 lg:pt-16 lg:pb-16">
       <div>
         <SectionIntro
           title="Our Journey"
