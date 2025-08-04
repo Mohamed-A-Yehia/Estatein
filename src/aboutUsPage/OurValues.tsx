@@ -5,7 +5,7 @@ import { IoMdSchool } from "react-icons/io";
 
 function OurValues() {
   return (
-    <section className="m-auto flex flex-col items-center gap-5 p-5 py-8 sm:container sm:p-0 sm:py-16 xl:flex-row xl:gap-20">
+    <section className="m-auto flex flex-col items-center gap-5 p-5 py-8 sm:container sm:py-16 xl:flex-row xl:gap-20">
       <div>
         <SectionIntro
           title="Our Values"
