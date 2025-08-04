@@ -1,5 +1,5 @@
 import HeroSection from "./HeroSection";
-import OurProcess from "./OurProcess";
+import OurProcess from "./OurAchievments";
 import OurValues from "./OurValues";
 
 function AboutUs() {
