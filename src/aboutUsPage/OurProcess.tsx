@@ -5,9 +5,11 @@ function OurProcess() {
     <section className="container m-auto sm:py-16">
       <SectionIntro
         stars={true}
-        title="Navigating The Estatein Experience"
-        description="At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works."
+        title="Our Achievments"
+        description="Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary."
       />
+
+      <div></div>
     </section>
   );
 }
