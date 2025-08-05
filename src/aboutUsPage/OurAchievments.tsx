@@ -1,6 +1,6 @@
 import SectionIntro from "../components/SectionIntro";
 
-function OurProcess() {
+function OurAchievments() {
   return (
     <section className="xlg:px-0 container m-auto px-4 py-8 sm:py-16">
       <SectionIntro
@@ -41,4 +41,4 @@ function OurProcess() {
   );
 }
 
-export default OurProcess;
+export default OurAchievments;
