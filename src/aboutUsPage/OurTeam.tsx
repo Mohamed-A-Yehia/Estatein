@@ -1,4 +1,3 @@
-import ContactInput from "../components/ContactInput";
 import SectionIntro from "../components/SectionIntro";
 
 function OurTeam() {
@@ -10,7 +9,12 @@ function OurTeam() {
         stars={true}
       />
 
-      <ContactInput emailIcon={false} placeholder="Say Hey 👋" rounded={100} />
+      <div className="grid grid-cols-1 text-white">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </section>
   );
 }
