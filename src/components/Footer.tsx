@@ -1,8 +1,9 @@
+import { MdOutlineEmail } from "react-icons/md";
 import NormalLink from "./NormalLink";
 import Logo from "./Logo";
+import { IoIosSend } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
-import ContactInput from "./ContactInput";
 
 function Footer() {
   return (
@@ -10,7 +11,26 @@ function Footer() {
       <footer className="bg-grey-08 m-auto p-5 pt-10 pb-0 lg:container lg:flex lg:justify-between lg:gap-5">
         <div className="flex flex-col text-white lg:mt-8">
           <Logo />
-          <ContactInput placeholder="Enter Your Email" />
+          <div className="relative w-fit">
+            <input
+              type="email"
+              name="Email"
+              placeholder="Enter Your Email"
+              id="footer-email"
+              autoComplete="email"
+              className="border-grey-15 focus:outline-grey-20 mt-5 w-60 rounded-lg border py-2.5 pl-11 focus:bg-transparent focus:outline sm:w-80"
+            />
+            <MdOutlineEmail
+              size={30}
+              className="text-grey-60 absolute top-7 left-2.5"
+            />
+            <button
+              className="absolute top-7 right-2.5 cursor-pointer text-white"
+              aria-label="send email"
+            >
+              <IoIosSend size={30} />
+            </button>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-5 self-start pt-10 text-white sm:grid-cols-5 sm:grid-rows-1">
           <div className="border-grey-15 flex flex-col gap-2 border-b pb-4 text-white sm:border-0">
