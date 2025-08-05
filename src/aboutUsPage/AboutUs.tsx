@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection";
 import OurAchievments from "./OurAchievments";
+import OurClients from "./OurClients";
 import OurProcess from "./OurProcess";
 import OurTeam from "./OurTeam";
 import OurValues from "./OurValues";
@@ -12,6 +13,7 @@ function AboutUs() {
       <OurAchievments />
       <OurProcess />
       <OurTeam />
+      <OurClients />
     </>
   );
 }
