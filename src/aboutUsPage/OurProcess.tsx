@@ -9,7 +9,7 @@ function OurProcess() {
         stars={true}
       />
 
-      <div className="mt-15 grid grid-cols-1 gap-20 text-white md:grid-rows-1">
+      <div className="mt-15 grid grid-cols-1 gap-20 pt-5 text-white md:grid-rows-1">
         <div className="grid grid-cols-1 gap-20 md:grid-cols-3 md:gap-10 xl:grid-cols-3">
           <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5 lg:p-5">
             <span className="before:bg-primary-65 absolute top-[-25%] left-0 pl-2.5 before:absolute before:top-[-5px] before:ml-[-11px] before:h-20 before:w-[1px] md:top-[-15%] xl:top-[-25%]">
