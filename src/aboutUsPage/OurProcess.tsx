@@ -2,7 +2,7 @@ import SectionIntro from "../components/SectionIntro";
 
 function OurProcess() {
   return (
-    <section className="container m-auto px-4 py-8 md:py-16 lg:px-0 xl:px-10">
+    <section className="container m-auto px-4 py-8 md:py-16 xl:px-10">
       <SectionIntro
         title=" Navigating the Estatein Experience"
         description="At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works."

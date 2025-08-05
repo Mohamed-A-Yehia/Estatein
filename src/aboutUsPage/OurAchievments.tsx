@@ -2,7 +2,7 @@ import SectionIntro from "../components/SectionIntro";
 
 function OurAchievments() {
   return (
-    <section className="container m-auto px-4 py-8 sm:py-16 lg:px-0 xl:px-10">
+    <section className="container m-auto px-4 py-8 sm:py-16 xl:px-10">
       <SectionIntro
         stars={true}
         title="Our Achievments"
