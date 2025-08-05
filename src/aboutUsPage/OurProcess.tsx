@@ -11,11 +11,11 @@ function OurProcess() {
 
       <div className="mt-15 grid grid-cols-1 gap-20 text-white md:grid-rows-1">
         <div className="grid grid-cols-1 gap-20 md:grid-cols-3 md:gap-10 xl:grid-cols-3">
-          <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5">
+          <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5 lg:p-5">
             <span className="before:bg-primary-65 absolute top-[-25%] left-0 pl-2.5 before:absolute before:top-[-5px] before:ml-[-11px] before:h-20 before:w-[1px] md:top-[-15%] xl:top-[-25%]">
               Step 01
             </span>
-            <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-11px] before:h-[1px] before:w-20">
+            <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-3%] before:h-[1px] before:w-20 before:md:ml-[-4%]">
               Discover a World Of Possibilities
             </h4>
             <p className="text-grey-60 text-[15px]">
@@ -24,11 +24,11 @@ function OurProcess() {
               based on your preferences, including location,
             </p>
           </div>
-          <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5">
+          <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5 lg:p-5">
             <span className="before:bg-primary-65 absolute top-[-25%] left-0 pl-2.5 before:absolute before:top-[-5px] before:ml-[-11px] before:h-20 before:w-[1px] md:top-[-15%] xl:top-[-25%]">
               Step 02
             </span>
-            <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-11px] before:h-[1px] before:w-20">
+            <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-3%] before:h-[1px] before:w-20 before:md:ml-[-4%]">
               Narrowing Down Your Choices
             </h4>
             <p className="text-grey-60 text-[15px]">
@@ -37,11 +37,11 @@ function OurProcess() {
               revisit your favorites as you make your decision.
             </p>
           </div>
-          <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5">
+          <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5 lg:p-5">
             <span className="before:bg-primary-65 absolute top-[-25%] left-0 pl-2.5 before:absolute before:top-[-5px] before:ml-[-11px] before:h-20 before:w-[1px] sm:top-[-15%] xl:top-[-25%]">
               Step 03
             </span>
-            <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-11px] before:h-[1px] before:w-20">
+            <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-3%] before:h-[1px] before:w-20 before:md:ml-[-4%]">
               Personalized Guidance
             </h4>
             <p className="text-grey-60 text-[15px]">
@@ -53,11 +53,11 @@ function OurProcess() {
         </div>
         <div className="hidden md:block">
           <div className="grid grid-cols-1 gap-20 md:grid-cols-3 md:gap-10 xl:grid-cols-3">
-            <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5">
+            <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5 lg:p-5">
               <span className="before:bg-primary-65 absolute top-[-25%] left-0 pl-2.5 before:absolute before:top-[-5px] before:ml-[-11px] before:h-20 before:w-[1px] md:top-[-15%] xl:top-[-25%]">
                 Step 04
               </span>
-              <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-11px] before:h-[1px] before:w-20">
+              <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-3%] before:h-[1px] before:w-20 before:md:ml-[-4%]">
                 See It for Yourself
               </h4>
               <p className="text-grey-60 text-[15px]">
@@ -66,11 +66,11 @@ function OurProcess() {
                 you get a firsthand look at your potential new home.
               </p>
             </div>
-            <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5">
+            <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5 lg:p-5">
               <span className="before:bg-primary-65 absolute top-[-25%] left-0 pl-2.5 before:absolute before:top-[-5px] before:ml-[-11px] before:h-20 before:w-[1px] md:top-[-15%] xl:top-[-25%]">
                 Step 05
               </span>
-              <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-11px] before:h-[1px] before:w-20">
+              <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-3%] before:h-[1px] before:w-20 before:md:ml-[-4%]">
                 Making Informed Decisions
               </h4>
               <p className="text-grey-60 text-[15px]">
@@ -79,11 +79,11 @@ function OurProcess() {
                 market analysis. We want you to be fully informed.
               </p>
             </div>
-            <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5">
+            <div className="border-grey-20 relative rounded-lg rounded-tl-none border p-2.5 lg:p-5">
               <span className="before:bg-primary-65 absolute top-[-25%] left-0 pl-2.5 before:absolute before:top-[-5px] before:ml-[-11px] before:h-20 before:w-[1px] md:top-[-15%] xl:top-[-25%]">
                 Step 06
               </span>
-              <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-11px] before:h-[1px] before:w-20">
+              <h4 className="before:bg-primary-65 mb-2.5 text-[20px] font-semibold before:absolute before:top-[-1px] before:ml-[-3%] before:h-[1px] before:w-20 before:md:ml-[-4%]">
                 Getting The Best Deal
               </h4>
               <p className="text-grey-60 text-[15px]">
