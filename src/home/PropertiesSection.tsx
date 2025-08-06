@@ -1,4 +1,4 @@
-import Lists from "./PropertiesLists";
+import PropertiesLists from "../components/PropertiesLists";
 import SectionIntro from "../components/SectionIntro";
 import { useProperties } from "../hooks/useProperties";
 import { BeatLoader } from "react-spinners";
@@ -15,7 +15,11 @@ function PropertiesSection() {
           through Estatein."
       />
 
-      {isLoading ? <BeatLoader color="#7520E9" size={100} /> : <Lists />}
+      {isLoading ? (
+        <BeatLoader color="#7520E9" size={100} />
+      ) : (
+        <PropertiesLists />
+      )}
     </section>
   );
 }

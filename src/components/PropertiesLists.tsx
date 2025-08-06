@@ -19,7 +19,7 @@ interface Property {
   type: string;
 }
 
-function Lists() {
+function PropertiesLists() {
   const { data: properties } = useProperties();
   const { index, maxIndex, start, visibleItems, setIndex } =
     useDataSize<Property>(properties);
@@ -77,4 +77,4 @@ function Lists() {
   );
 }
 
-export default Lists;
+export default PropertiesLists;
