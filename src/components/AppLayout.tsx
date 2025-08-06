@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Suspense } from "react";
 
 function AppLayout() {
   return (
@@ -8,7 +9,13 @@ function AppLayout() {
       <Header />
 
       <main>
-        <Outlet />
+        <Suspense
+          fallback={
+            <div className="text-center text-4xl text-white">Loading</div>
+          }
+        >
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
     </div>
