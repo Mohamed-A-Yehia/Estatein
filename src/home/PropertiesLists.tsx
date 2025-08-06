@@ -3,6 +3,7 @@ import { HiOutlineBuildingOffice } from "react-icons/hi2";
 import LinkButton from "../components/LinkButton";
 import PrevNextButtons from "../components/PrevNextButtons";
 import useDataSize from "../hooks/useDataSize";
+import { useProperties } from "../hooks/useProperties";
 
 interface Property {
   id: string;
@@ -18,11 +19,8 @@ interface Property {
   type: string;
 }
 
-interface ListsProps {
-  properties: Property[];
-}
-
-function Lists({ properties }: ListsProps) {
+function Lists() {
+  const { data: properties } = useProperties();
   const { index, maxIndex, start, visibleItems, setIndex } =
     useDataSize<Property>(properties);
 

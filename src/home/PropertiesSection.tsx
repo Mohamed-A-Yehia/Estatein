@@ -4,7 +4,7 @@ import { useProperties } from "../hooks/useProperties";
 import { BeatLoader } from "react-spinners";
 
 function PropertiesSection() {
-  const { isLoading, data } = useProperties();
+  const { isLoading } = useProperties();
 
   return (
     <section className="border-grey-15 m-auto border-b p-5 pt-16 pb-1 lg:container">
@@ -15,11 +15,7 @@ function PropertiesSection() {
           through Estatein."
       />
 
-      {isLoading ? (
-        <BeatLoader color="#7520E9" size={100} />
-      ) : (
-        <Lists properties={data} />
-      )}
+      {isLoading ? <BeatLoader color="#7520E9" size={100} /> : <Lists />}
     </section>
   );
 }
