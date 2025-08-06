@@ -1,3 +1,4 @@
+import CtaSection from "../components/CtaSection";
 import HeroSection from "./HeroSection";
 import OurAchievments from "./OurAchievments";
 import OurClients from "./OurClients";
@@ -14,6 +15,7 @@ function AboutUs() {
       <OurProcess />
       <OurTeam />
       <OurClients />
+      <CtaSection />
     </>
   );
 }
