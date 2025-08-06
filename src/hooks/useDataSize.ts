@@ -15,15 +15,15 @@ interface UseSizeResult<T> {
 function useDataSize<T>(
   items: T[],
   initialVisibleCount?: number,
-  size?: number,
 ): UseSizeResult<T> {
   const [index, setIndex] = useState(0);
 
   const getVisibleCount = () => {
-    if (size === 2) return 2;
+    if (initialVisibleCount === 2 && window.innerWidth >= 768)
+      return initialVisibleCount;
     if (window.innerWidth >= 1024) return initialVisibleCount || 3;
     if (window.innerWidth >= 768) return initialVisibleCount || 2;
-    return initialVisibleCount || 1;
+    return 1;
   };
 
   const [visibleCount, setVisibleCount] = useState(getVisibleCount());
