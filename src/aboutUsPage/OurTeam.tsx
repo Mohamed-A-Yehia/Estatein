@@ -132,8 +132,8 @@ function OurTeam() {
             type="email"
             placeholder="Say Hello 👋"
             name="send-message-to-team"
-            id="message-David"
-            aria-label="send message to Max Micheal, Legal Counsel"
+            id="message-Michael"
+            aria-label="send message to Michael Turner, Legal Counsel"
           />
           <button
             className="bg-primary-60 absolute right-7 bottom-6.5 cursor-pointer rounded-full p-2 text-white"
