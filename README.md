@@ -34,11 +34,17 @@ Sleek and modern real estate website designed to help users explore and find the
 ├── assets
 │ ├── fonts
 │ └── images
+├── home
+├── aboutusPage
+├── propertiesPage
+├── propertiesDetailsPage
+├── servicesPage
 ├── components
 ├── context
-├── home
 ├── hooks
 ├── App.css
 ├── App.tsx
 └── main.tsx
 ```
+
+> Implemented Pages: Home - About Us.
