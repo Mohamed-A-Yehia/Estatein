@@ -11,7 +11,10 @@
       "bedrooms": 4,
       "bathrooms": 3,
       "area": "2,500 Square Feet",
-      "type": "Villa"
+      "type": "Villa",
+      "location": "California",
+      "sizeCategory": "medium",
+      "buildYear": 2018
     },
     {
       "id": "2",
@@ -24,7 +27,10 @@
       "bedrooms": 2,
       "bathrooms": 1,
       "area": "1,200 Square Feet",
-      "type": "Cabin"
+      "type": "Cabin",
+      "location": "Colorado",
+      "sizeCategory": "small",
+      "buildYear": 2015
     },
     {
       "id": "3",
@@ -37,7 +43,10 @@
       "bedrooms": 3,
       "bathrooms": 2,
       "area": "3,000 Square Feet",
-      "type": "Penthouse"
+      "type": "Penthouse",
+      "location": "New York",
+      "sizeCategory": "large",
+      "buildYear": 2020
     },
     {
       "id": "4",
@@ -50,7 +59,10 @@
       "bedrooms": 5,
       "bathrooms": 4,
       "area": "3,500 Square Feet",
-      "type": "Home"
+      "type": "Home",
+      "location": "Michigan",
+      "sizeCategory": "large",
+      "buildYear": 2017
     },
     {
       "id": "5",
@@ -63,7 +75,10 @@
       "bedrooms": 6,
       "bathrooms": 5,
       "area": "4,000 Square Feet",
-      "type": "Mansion"
+      "type": "Mansion",
+      "location": "Arizona",
+      "sizeCategory": "large",
+      "buildYear": 2022
     },
     {
       "id": "6",
@@ -76,7 +91,10 @@
       "bedrooms": 2,
       "bathrooms": 1,
       "area": "1,100 Square Feet",
-      "type": "Cottage"
+      "type": "Cottage",
+      "location": "Oregon",
+      "sizeCategory": "small",
+      "buildYear": 2014
     },
     {
       "id": "7",
@@ -89,7 +107,10 @@
       "bedrooms": 5,
       "bathrooms": 4,
       "area": "4,200 Square Feet",
-      "type": "Estate"
+      "type": "Estate",
+      "location": "Texas",
+      "sizeCategory": "large",
+      "buildYear": 2021
     },
     {
       "id": "8",
@@ -102,7 +123,10 @@
       "bedrooms": 4,
       "bathrooms": 3,
       "area": "2,800 Square Feet",
-      "type": "Haven"
+      "type": "Haven",
+      "location": "Florida",
+      "sizeCategory": "medium",
+      "buildYear": 2019
     },
     {
       "id": "9",
@@ -115,7 +139,10 @@
       "bedrooms": 3,
       "bathrooms": 2,
       "area": "1,800 Square Feet",
-      "type": "Bungalow"
+      "type": "Bungalow",
+      "location": "Hawaii",
+      "sizeCategory": "medium",
+      "buildYear": 2016
     },
     {
       "id": "10",
@@ -128,7 +155,10 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "area": "1,500 Square Feet",
-      "type": "Apartment"
+      "type": "Apartment",
+      "location": "Chicago",
+      "sizeCategory": "small",
+      "buildYear": 2023
     }
   ]
 }
