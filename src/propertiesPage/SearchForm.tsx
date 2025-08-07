@@ -31,14 +31,13 @@ function SearchForm() {
       <div className="bg-grey-15 relative flex flex-col items-center justify-center gap-5 rounded-md p-5 text-[15px]">
         <div className="flex items-center justify-center">
           <select
+            defaultValue="all"
             name="select-location"
             id="select-location"
             aria-label="select location"
             className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
           >
-            <option selected disabled value="all">
-              Location
-            </option>
+            <option value="all">Location</option>
             <option value="">Option 2</option>
             <option value="">Option 3</option>
           </select>
@@ -48,14 +47,13 @@ function SearchForm() {
 
         <div className="flex items-center justify-center">
           <select
+            defaultValue="all"
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
             className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
           >
-            <option disabled selected value="all">
-              Property Type
-            </option>
+            <option value="all">Property Type</option>
             <option value="">Option 2</option>
             <option value="">Option 3</option>
           </select>
@@ -65,14 +63,13 @@ function SearchForm() {
 
         <div className="flex items-center justify-center">
           <select
+            defaultValue="all"
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
             className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
           >
-            <option disabled selected value="all">
-              Pricing Range
-            </option>
+            <option value="all">Pricing Range</option>
             <option value="">Option 2</option>
             <option value="">Option 3</option>
           </select>
@@ -82,14 +79,13 @@ function SearchForm() {
 
         <div className="flex items-center justify-center">
           <select
+            defaultValue="all"
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
             className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
           >
-            <option disabled selected value="all">
-              Property Size
-            </option>
+            <option value="all">Property Size</option>
             <option value="">Option 2</option>
             <option value="">Option 3</option>
           </select>
@@ -99,14 +95,13 @@ function SearchForm() {
 
         <div className="flex items-center justify-center">
           <select
+            defaultValue="all"
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
             className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
           >
-            <option disabled selected value="all">
-              Build Year
-            </option>
+            <option value="all">Build Year</option>
             <option value="">Option 2</option>
             <option value="">Option 3</option>
           </select>
