@@ -9,33 +9,35 @@ import { RiArrowDownWideFill } from "react-icons/ri";
 function SearchForm() {
   return (
     <form>
-      <div className="relative mb-5">
-        <input
-          className="border-grey-20 ring-grey-15 outline-grey-30 w-full rounded-lg border px-6 py-5 ring-4 focus:outline-1 md:w-3/4"
-          type="search"
-          name="search-property"
-          id="search-property"
-          placeholder="Search For A Property"
-          aria-label="Search For Property"
-        />
-        <button
-          type="submit"
-          aria-label="Submit The Form Search"
-          id="submit-search"
-          className="bg-primary-60 absolute top-2 right-2 rounded-lg px-4 py-2.5"
-        >
-          <LuSearch size={30} />
-        </button>
+      <div className="flex justify-center">
+        <div className="bg-grey-15 relative mb-5 w-[100%] md:w-[80%] lg:mb-0">
+          <input
+            className="border-grey-20 ring-grey-15 bg-grey-10 outline-grey-30 w-full rounded-lg border px-6 py-5 ring-4 focus:outline-1"
+            type="search"
+            name="search-property"
+            id="search-property"
+            placeholder="Search For A Property"
+            aria-label="Search For Property"
+          />
+          <button
+            type="submit"
+            aria-label="Submit The Form Search"
+            id="submit-search"
+            className="bg-primary-60 right-[] absolute top-2 right-[1%] rounded-lg px-4 py-2.5"
+          >
+            <LuSearch size={30} />
+          </button>
+        </div>
       </div>
 
-      <div className="bg-grey-15 relative flex flex-col items-center justify-center gap-5 rounded-md p-5 text-[15px]">
+      <div className="bg-grey-15 center relative grid grid-cols-1 gap-5 rounded-md p-5 text-[15px] lg:grid-cols-5">
         <div className="flex items-center justify-center">
           <select
             defaultValue="all"
             name="select-location"
             id="select-location"
             aria-label="select location"
-            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
+            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 min-w-full appearance-none rounded-lg border-1 py-3 pl-8"
           >
             <option value="all">Location</option>
             <option value="">Option 2</option>
@@ -51,7 +53,7 @@ function SearchForm() {
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
-            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
+            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 min-w-full appearance-none rounded-lg border-1 py-3 pl-8"
           >
             <option value="all">Property Type</option>
             <option value="">Option 2</option>
@@ -67,7 +69,7 @@ function SearchForm() {
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
-            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
+            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 min-w-full appearance-none rounded-lg border-1 py-3 pl-8"
           >
             <option value="all">Pricing Range</option>
             <option value="">Option 2</option>
@@ -83,7 +85,7 @@ function SearchForm() {
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
-            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
+            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 min-w-full appearance-none rounded-lg border-1 py-3 pl-8"
           >
             <option value="all">Property Size</option>
             <option value="">Option 2</option>
@@ -99,7 +101,7 @@ function SearchForm() {
             name="select-Property-Type"
             id="select-Property-Type"
             aria-label="select Property Type"
-            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 w-[325px] appearance-none rounded-lg border-1 py-3 pl-8"
+            className="text-grey-60 bg-grey-10 foucs:outline-1 outline-grey-30 min-w-full appearance-none rounded-lg border-1 py-3 pl-8"
           >
             <option value="all">Build Year</option>
             <option value="">Option 2</option>
