@@ -67,7 +67,7 @@ function SearchForm() {
         <div className="relative flex items-center justify-center">
           <select
             defaultValue="all"
-            name="select-Property-Type"
+            name="select-pricing-range"
             id="select-pricing-range"
             aria-label="select Property Type"
             className="text-grey-60 bg-grey-10 outline-grey-60 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
@@ -83,8 +83,8 @@ function SearchForm() {
         <div className="relative flex items-center justify-center">
           <select
             defaultValue="all"
-            name="select-Property-Type"
-            id="select-Property-Type"
+            name="select-Property-size"
+            id="select-Property-size"
             aria-label="select Property Type"
             className="text-grey-60 bg-grey-10 outline-grey-60 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
           >
@@ -99,8 +99,8 @@ function SearchForm() {
         <div className="relative flex items-center justify-center">
           <select
             defaultValue="all"
-            name="select-Property-Type"
-            id="select-Property-Type"
+            name="select-build-year"
+            id="select-build-year"
             aria-label="select Property Type"
             className="text-grey-60 bg-grey-10 outline-grey-60 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
           >
