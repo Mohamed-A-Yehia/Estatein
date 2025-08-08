@@ -7,6 +7,7 @@ import AppLayout from "./components/AppLayout";
 import Error from "./components/Error";
 
 import { lazy } from "react";
+import PropertiesDetails from "./propertiesPage/PropertiesDetails";
 
 const Home = lazy(() => import("./home/Home"));
 const AboutUs = lazy(() => import("./aboutUsPage/AboutUs"));
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/aboutus", element: <AboutUs /> },
       { path: "/properties", element: <Properties /> },
+      { path: "/properties/:propertyId", element: <PropertiesDetails /> },
       { path: "/services", element: <Services /> },
     ],
   },

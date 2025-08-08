@@ -73,7 +73,10 @@ function PropertiesLists({ tags }: props) {
               <p className="text-grey-60">
                 Price<span className="block text-white">{property.price}</span>
               </p>
-              <LinkButton buttonType="primary" to="">
+              <LinkButton
+                buttonType="primary"
+                to={`/properties/${property.id}`}
+              >
                 View Property Details
               </LinkButton>
             </div>
