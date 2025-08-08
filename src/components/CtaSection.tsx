@@ -12,7 +12,7 @@ function CtaSection() {
           fontsize="text-3xl"
         />
 
-        <LinkButton buttonType="primary" to="/">
+        <LinkButton buttonType="primary" to="/properties">
           Explore Properties
         </LinkButton>
       </div>

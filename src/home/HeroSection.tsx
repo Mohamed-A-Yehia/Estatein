@@ -22,10 +22,10 @@ function HeroSection() {
             </p>
           </div>
           <div className="mt-10 flex flex-col justify-center gap-4 text-white md:flex-row md:gap-8 lg:justify-start xl:mt-12">
-            <LinkButton to="" buttonType="">
+            <LinkButton to="/aboutus" buttonType="">
               Learn More
             </LinkButton>
-            <LinkButton to="" buttonType="primary">
+            <LinkButton to="/properties" buttonType="primary">
               Browse Properties
             </LinkButton>
           </div>
