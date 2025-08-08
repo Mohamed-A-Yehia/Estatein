@@ -19,7 +19,11 @@ interface Property {
   type: string;
 }
 
-function PropertiesLists() {
+type props = {
+  tags?: boolean;
+};
+
+function PropertiesLists({ tags }: props) {
   const { data: properties } = useProperties();
   const { index, maxIndex, start, visibleItems, setIndex } =
     useDataSize<Property>(properties);
@@ -38,23 +42,32 @@ function PropertiesLists() {
               alt={property.title}
               className="w-full rounded-md"
             />
+            {tags && (
+              <p className="bg-grey-15 flex w-fit items-center gap-2.5 rounded-full px-2 py-1">
+                {property.tag}
+              </p>
+            )}
             <h2 className="text-lg font-semibold sm:text-2xl">
               {property.title}
             </h2>
             <p className="text-grey-60">{property.shortDescription}</p>
             <div className="flex flex-wrap items-center gap-2.5">
-              <div className="bg-grey-15 flex items-center gap-2.5 rounded-full px-2 py-1">
-                <LuBedDouble />
-                <p>{property.bedrooms} Bedrooms</p>
-              </div>
-              <div className="bg-grey-15 flex items-center gap-2.5 rounded-full px-2 py-1">
-                <LuBath />
-                <p>{property.bathrooms} Bathrooms</p>
-              </div>
-              <div className="bg-grey-15 flex items-center gap-2.5 rounded-full px-2 py-1">
-                <HiOutlineBuildingOffice />
-                <p>{property.type}</p>
-              </div>
+              {!tags && (
+                <>
+                  <div className="bg-grey-15 flex items-center gap-2.5 rounded-full px-2 py-1">
+                    <LuBedDouble />
+                    <p>{property.bedrooms} Bedrooms</p>
+                  </div>
+                  <div className="bg-grey-15 flex items-center gap-2.5 rounded-full px-2 py-1">
+                    <LuBath />
+                    <p>{property.bathrooms} Bathrooms</p>
+                  </div>
+                  <div className="bg-grey-15 flex items-center gap-2.5 rounded-full px-2 py-1">
+                    <HiOutlineBuildingOffice />
+                    <p>{property.type}</p>
+                  </div>
+                </>
+              )}
             </div>
             <div className="flex flex-wrap items-center justify-between gap-3 md:flex-row md:items-start md:gap-2.5">
               <p className="text-grey-60">

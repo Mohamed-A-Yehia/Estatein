@@ -9,7 +9,7 @@ function PropertiesSection() {
         description="Our portfolio of properties is as diverse as your dreams. Explore the following categories to find the perfect property that resonates with your vision of home"
       />
 
-      <PropertiesLists />
+      <PropertiesLists tags={true} />
     </section>
   );
 }
