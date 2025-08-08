@@ -1,6 +1,7 @@
 import HeroSection from "./HeroSection";
 import PropertiesSection from "./PropertiesSection";
 import FindProperty from "./FindProperty";
+import CtaSection from "../components/CtaSection";
 
 function Properties() {
   return (
@@ -8,6 +9,7 @@ function Properties() {
       <HeroSection />
       <PropertiesSection />
       <FindProperty />
+      <CtaSection />
     </>
   );
 }
