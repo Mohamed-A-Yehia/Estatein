@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 function AppLayout() {
   return (
-    <div className="bg-grey-10">
+    <div className="bg-grey-08">
       <Header />
 
       <main>

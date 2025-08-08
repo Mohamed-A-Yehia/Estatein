@@ -30,7 +30,7 @@ function PropertiesLists() {
         {visibleItems.map((property) => (
           <div
             key={property.id}
-            className="border-grey-20 flex w-full flex-col justify-between gap-3 rounded-md border-1 p-6 lg:w-1/3"
+            className="border-grey-15 flex w-full flex-col justify-between gap-3 rounded-md border-1 p-6 lg:w-1/3"
           >
             <img
               src={property.imageUrl}

@@ -8,7 +8,7 @@ import { BsLinkedin } from "react-icons/bs";
 function Footer() {
   return (
     <>
-      <footer className="bg-grey-08 m-auto p-5 pt-10 pb-0 lg:container lg:flex lg:justify-between lg:gap-5">
+      <footer className="m-auto px-5 py-10 lg:container lg:flex lg:justify-between lg:gap-5">
         <div className="flex flex-col text-white lg:mt-8">
           <Logo />
           <div className="relative w-fit">
@@ -18,7 +18,7 @@ function Footer() {
               placeholder="Enter Your Email"
               id="footer-email"
               autoComplete="email"
-              className="border-grey-15 focus:outline-grey-20 mt-5 w-60 rounded-lg border py-2.5 pl-11 focus:bg-transparent focus:outline sm:w-80"
+              className="border-grey-15 focus:outline-grey-15 mt-5 w-60 rounded-lg border py-2.5 pl-11 focus:bg-transparent focus:outline sm:w-80"
             />
             <MdOutlineEmail
               size={30}
@@ -33,7 +33,7 @@ function Footer() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-5 self-start pt-10 text-white sm:grid-cols-5 sm:grid-rows-1">
-          <div className="border-grey-15 flex flex-col gap-2 border-b pb-4 text-white sm:border-0">
+          <div className="border-grey-15 flex flex-col gap-5 border-b pb-4 text-white sm:border-0">
             <p className="text-grey-60 font-medium">Home</p>
             <NormalLink to="" buttonType="">
               Hero Section
@@ -51,7 +51,7 @@ function Footer() {
               FAQ's
             </NormalLink>
           </div>
-          <div className="border-grey-15 flex flex-col gap-2 border-b pb-4 text-white sm:border-0">
+          <div className="border-grey-15 flex flex-col gap-5 border-b pb-4 text-white sm:border-0">
             <p className="text-grey-60 font-medium">About Us</p>
             <NormalLink to="" buttonType="">
               Our Story
@@ -69,7 +69,7 @@ function Footer() {
               Our Clients
             </NormalLink>
           </div>
-          <div className="flex flex-col gap-2 pb-4 text-white">
+          <div className="flex flex-col gap-5 pb-4 text-white">
             <p className="text-grey-60 font-medium">Properties</p>
             <NormalLink to="" buttonType="">
               Portfolio
@@ -78,7 +78,7 @@ function Footer() {
               Categories
             </NormalLink>
           </div>
-          <div className="border-grey-15 flex flex-col gap-2 border-b pb-4 text-white md:border-0">
+          <div className="border-grey-15 flex flex-col gap-5 border-b pb-4 text-white md:border-0">
             <p className="text-grey-60 font-medium">Services</p>
             <NormalLink to="" buttonType="">
               Valuation Mastery
@@ -96,7 +96,7 @@ function Footer() {
               Property Management
             </NormalLink>
           </div>
-          <div className="border-grey-15 mt-[-95px] flex flex-col gap-2 border-t border-b py-4 text-white sm:mt-0 sm:border-0 md:py-0">
+          <div className="border-grey-15 mt-[-95px] flex flex-col gap-5 border-t border-b py-4 text-white sm:mt-0 sm:border-0 md:py-0">
             <p className="text-grey-60 font-medium">Contact Us</p>
             <NormalLink to="" buttonType="">
               Contect Form

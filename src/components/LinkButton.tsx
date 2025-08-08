@@ -10,7 +10,7 @@ function LinkButton({ children, buttonType = "", to }: props) {
   const color =
     buttonType === "primary"
       ? "bg-primary-60 "
-      : "bg-grey-15 border-grey-20 border-1";
+      : "bg-grey-10 border-grey-15 border-1";
 
   return (
     <Link
