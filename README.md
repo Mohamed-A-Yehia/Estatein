@@ -16,7 +16,7 @@ Sleek and modern real estate website designed to help users explore and find the
 - **React-Icons** - The Best Icon That Makes Your Code Clean.
 - **React-Spinners** - For Better UX.
 
-> There's More Coming.. ~\_~
+> There's More Coming.. ~.~
 
 ---
 
