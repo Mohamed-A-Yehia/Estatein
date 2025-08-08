@@ -3,7 +3,7 @@ import SectionIntro from "../components/SectionIntro";
 
 function CtaSection() {
   return (
-    <section className="border-grey-15 m-auto border-b bg-[url('/images/CtaSectionBgC.webp')] bg-cover bg-center px-5 py-16 lg:container">
+    <section className="border-grey-15 m-auto border-b bg-[url('/images/CtaSectionBgC.webp')] bg-cover bg-center px-5 py-16 md:px-16 lg:container">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
         <SectionIntro
           title="Start Your Real Estate Journey Today"
