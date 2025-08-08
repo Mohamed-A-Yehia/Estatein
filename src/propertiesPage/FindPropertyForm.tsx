@@ -4,7 +4,7 @@ import LinkButton from "../components/LinkButton";
 
 function FindPropertyForm() {
   return (
-    <form className="border-grey-20 placeholder:bg-grey-60 grid gap-5 rounded-lg border p-5">
+    <form className="border-grey-20 placeholder:bg-grey-60 grid gap-5 rounded-lg border p-5 lg:grid-cols-4 lg:grid-rows-5 lg:items-center lg:p-10">
       <div className="flex flex-col gap-2.5">
         <label htmlFor="first-name">First Name</label>
         <input
@@ -98,6 +98,22 @@ function FindPropertyForm() {
       </div>
 
       <div className="relative flex flex-col gap-2.5">
+        <label htmlFor="bedrooms-number">No. of Bedrooms</label>
+        <select
+          defaultValue="all"
+          name="bedrooms number"
+          id="bedrooms-number"
+          aria-label="Number of bedrooms"
+          className="bg-grey-08 border-grey-20 focus:outline-grey-30 text-grey-60 appearance-none rounded-lg border px-2.5 py-2.5 focus:outline"
+        >
+          <option value="all">No. of Bathrooms</option>
+          <option value="">Option 2</option>
+          <option value="">Option 3</option>
+        </select>
+        <RiArrowDownWideFill className="bg-grey-15 absolute top-11 right-2.5 size-7 rounded-full p-0.5" />
+      </div>
+
+      <div className="relative flex flex-col gap-2.5 lg:col-span-2 lg:row-start-3">
         <label htmlFor="budget">Budget</label>
         <select
           defaultValue="all"
@@ -113,20 +129,20 @@ function FindPropertyForm() {
         <RiArrowDownWideFill className="bg-grey-15 absolute top-11 right-2.5 size-7 rounded-full p-0.5" />
       </div>
 
-      <div className="relative flex flex-col gap-2.5">
-        <fieldset className="flex flex-col gap-2.5">
+      <div className="relative flex flex-col gap-2.5 lg:col-span-2 lg:row-start-3">
+        <fieldset className="flex flex-col gap-2.5 lg:flex-row">
           <legend className="mb-2.5">Preferred Contact Method</legend>
-          <div className="bg-grey-08 border-grey-20 text-grey-60 flex items-center justify-between rounded-lg border p-2.5">
+          <div className="bg-grey-08 border-grey-20 text-grey-60 flex items-center justify-between rounded-lg border p-2.5 lg:min-w-1/2">
             <MdPhone />
-            <label htmlFor="contact-phone" className="ml-2.5 w-full">
+            <label htmlFor="contact-phone" className="ml-2.5">
               Phone
             </label>
             <input type="radio" name="contact" id="contact-phone" />
           </div>
 
-          <div className="bg-grey-08 border-grey-20 text-grey-60 flex items-center justify-between rounded-lg border p-2.5">
+          <div className="bg-grey-08 border-grey-20 text-grey-60 flex items-center justify-between rounded-lg border p-2.5 lg:min-w-1/2">
             <MdEmail />
-            <label htmlFor="contact-email" className="ml-2.5 w-full">
+            <label htmlFor="contact-email" className="ml-2.5">
               Email
             </label>
             <input
@@ -139,7 +155,7 @@ function FindPropertyForm() {
         </fieldset>
       </div>
 
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-2.5 lg:col-span-4">
         <label htmlFor="message">Message</label>
         <textarea
           name="messagelast-name"
@@ -149,7 +165,7 @@ function FindPropertyForm() {
         />
       </div>
 
-      <div className="text-grey-60 flex gap-2.5 text-sm">
+      <div className="text-grey-60 col-start-1 flex gap-2.5 text-sm lg:col-span-2">
         <input
           required
           type="checkbox"
@@ -163,7 +179,7 @@ function FindPropertyForm() {
         </label>
       </div>
 
-      <div className="w-full">
+      <div className="w-full lg:col-end-5">
         <LinkButton buttonType="primary" to="">
           Send Your Message
         </LinkButton>
