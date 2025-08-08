@@ -43,7 +43,7 @@ function PropertiesLists({ tags }: props) {
               className="w-full rounded-md"
             />
             {tags && (
-              <p className="bg-grey-15 flex w-fit items-center gap-2.5 rounded-full px-2 py-1">
+              <p className="bg-grey-15 w-fit rounded-full px-2 py-1 text-sm font-light tracking-wider">
                 {property.tag}
               </p>
             )}

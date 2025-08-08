@@ -87,7 +87,7 @@ function FindPropertyForm() {
           defaultValue="all"
           name="bathrooms number"
           id="bathrooms-number"
-          aria-label="find property-type"
+          aria-label="number of bathrooms"
           className="bg-grey-10 border-grey-15 focus:outline-grey-30 text-grey-60 appearance-none rounded-lg border px-2.5 py-2.5 focus:outline"
         >
           <option value="all">No. of Bathrooms</option>
@@ -119,7 +119,7 @@ function FindPropertyForm() {
           defaultValue="all"
           name="budget"
           id="budget"
-          aria-label="find property-type"
+          aria-label="your budget"
           className="bg-grey-10 border-grey-15 focus:outline-grey-30 text-grey-60 appearance-none rounded-lg border px-2.5 py-2.5 focus:outline"
         >
           <option value="all">Select Budget</option>
@@ -160,6 +160,7 @@ function FindPropertyForm() {
         <textarea
           name="messagelast-name"
           id="message"
+          aria-label="write your message here"
           placeholder="Enter Your Message here.."
           className="bg-grey-10 border-grey-15 focus:outline-grey-30 h-30 rounded-lg border px-4 py-2.5 text-justify focus:outline"
         />
@@ -169,6 +170,7 @@ function FindPropertyForm() {
         <input
           required
           type="checkbox"
+          aria-label="confirm that you agree with Terms and Privacy Policy"
           name="terms-privacy"
           id="terms-privacy"
           className=""
