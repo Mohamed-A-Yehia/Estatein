@@ -13,10 +13,10 @@ function OurValues() {
           stars={true}
         />
       </div>
-      <div className="bg-grey-15 border-grey-15 rounded-lg border-7">
-        <div className="border-grey-30 bg-grey-10 rounded-lg border p-5 text-white md:p-10">
-          <div className="border-grey-30 mb-5 grid grid-cols-1 grid-rows-1 gap-5 border-0 border-b pb-5 md:mb-10 md:grid-cols-2 md:pb-10">
-            <div className="border-grey-30 border-b pb-5 md:border-0 md:pb-0">
+      <div className="border-grey-10 rounded-lg border-7">
+        <div className="border-grey-20 rounded-lg border p-5 text-white md:p-10">
+          <div className="border-grey-20 mb-5 grid grid-cols-1 grid-rows-1 gap-5 border-0 border-b pb-5 md:mb-10 md:grid-cols-2 md:pb-10">
+            <div className="border-grey-15 border-b pb-5 md:border-0 md:pb-0">
               <span className="mb-2.5 flex items-center gap-5 text-lg font-semibold md:text-[20px]">
                 <FaStar className="border-primary-60 text-primary-70 inline-block size-10 rounded-full border p-2.5 md:size-15" />
                 Truest
@@ -26,7 +26,7 @@ function OurValues() {
                 transaction.
               </p>
             </div>
-            <div className="border-grey-30 md:border-l md:pl-10">
+            <div className="border-grey-20 md:border-l md:pl-10">
               <span className="mb-2.5 flex items-center gap-5 text-lg font-semibold md:text-[20px]">
                 <IoMdSchool className="border-primary-60 text-primary-70 inline-block size-10 rounded-full border p-2.5 md:size-15" />
                 Excellence
@@ -38,7 +38,7 @@ function OurValues() {
             </div>
           </div>
           <div className="grid grid-rows-1 gap-2.5 md:grid-cols-2 lg:gap-5">
-            <div className="border-grey-30 mb-2.5 border-b pb-5 md:border-0 md:pb-0">
+            <div className="border-grey-20 mb-2.5 border-b pb-5 md:border-0 md:pb-0">
               <span className="mb-2.5 flex items-center gap-5 text-lg font-semibold md:text-[20px]">
                 <BsPeopleFill className="border-primary-60 text-primary-70 inline-block size-10 rounded-full border p-2.5 md:size-15" />
                 Client-Centric
@@ -48,7 +48,7 @@ function OurValues() {
                 listen, understand.
               </p>
             </div>
-            <div className="border-grey-30 md:border-l md:pb-0 md:pl-10">
+            <div className="border-grey-20 md:border-l md:pb-0 md:pl-10">
               <span className="mb-2.5 flex items-center gap-5 text-lg font-semibold md:text-[20px]">
                 <FaStar className="border-primary-60 text-primary-70 inline-block size-10 rounded-full border p-2.5 md:size-15" />
                 Our Commitment

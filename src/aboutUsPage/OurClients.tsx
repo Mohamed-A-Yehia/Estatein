@@ -74,16 +74,18 @@ function OurClients() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {visibleItems.map((client) => (
             <div
-              className="border-grey-30 ring-grey-15 flex flex-col gap-8 rounded-lg border p-6 ring-6"
+              className="border-grey-15 ring-grey-10 flex flex-col gap-8 rounded-lg border p-6 ring-6"
               key={client.id}
             >
-              <div>
-                <p className="text-grey-60 mb-2.5">Since {client.since}</p>
-                <p className="text-[20px] font-semibold">{client.name}</p>
+              <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center md:gap-0">
+                <div>
+                  <p className="text-grey-60 mb-2.5">Since {client.since}</p>
+                  <p className="text-[20px] font-semibold">{client.name}</p>
+                </div>
+                <LinkButton to="" buttonType="">
+                  Visit Website
+                </LinkButton>
               </div>
-              <LinkButton to="" buttonType="">
-                Visit Website
-              </LinkButton>
               <div className="flex gap-10">
                 <p className="text-lg">
                   <span className="text-grey-60 block text-[15px]">Domin</span>
@@ -96,7 +98,7 @@ function OurClients() {
                   {client.category}
                 </p>
               </div>
-              <p className="border-grey-20 rounded-lg border p-4 text-lg">
+              <p className="border-grey-15 rounded-lg border p-4 text-lg">
                 <span className="text-grey-60 mb-2.5 block text-[15px]">
                   What They Said 🤗
                 </span>

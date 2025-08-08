@@ -10,7 +10,7 @@ function OurAchievments() {
       />
 
       <div className="grid grid-cols-1 gap-6 text-white md:grid-cols-2 lg:grid-cols-3">
-        <div className="ring-grey-15 border-grey-60 bg-grey-10 rounded-lg border p-6 ring-6 lg:p-10">
+        <div className="ring-grey-10 border-grey-15 rounded-lg border p-6 ring-6 lg:p-10">
           <h4 className="mb-2.5 text-[20px] font-semibold">
             3+ Years of Excllence
           </h4>
@@ -20,14 +20,14 @@ function OurAchievments() {
             real estate.
           </p>
         </div>
-        <div className="border-grey-60 bg-grey-10 ring-grey-15 rounded-lg border p-6 ring-6 lg:p-10">
+        <div className="border-grey-20 ring-grey-10 rounded-lg border p-6 ring-6 lg:p-10">
           <h4 className="mb-2.5 text-[20px] font-semibold">Happy Clients</h4>
           <p className="text-grey-60 text-sm">
             Our greatest achievement is the satisfaction of our clients. Their
             success stories fuel our passion for what we do.
           </p>
         </div>
-        <div className="border-grey-60 bg-grey-10 ring-grey-15 rounded-lg border p-6 ring-6 lg:p-10">
+        <div className="border-grey-20 ring-grey-10 rounded-lg border p-6 ring-6 lg:p-10">
           <h4 className="mb-2.5 text-[20px] font-semibold">
             Industry Recognition
           </h4>

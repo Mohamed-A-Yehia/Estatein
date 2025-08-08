@@ -17,7 +17,7 @@ function OurTeam() {
       />
 
       <div className="grid grid-cols-1 gap-5 text-white md:grid-cols-2 xl:grid-cols-4">
-        <div className="border-grey-20 relative flex flex-col items-center gap-2.5 rounded-lg border p-5">
+        <div className="border-grey-15 relative flex flex-col items-center gap-2.5 rounded-lg border p-5">
           <img src={team1} alt="Max Mitchel, The Founder" width="100%" />
           <div className="relative flex flex-col items-center gap-4">
             <button
@@ -30,7 +30,7 @@ function OurTeam() {
             <p className="text-grey-60 text-[15px]">Founder</p>
           </div>
           <input
-            className="bg-grey-10 border-grey-20 w-full rounded-full border px-5 py-4"
+            className="bg-grey-10 border-grey-15 w-full rounded-full border px-5 py-4"
             type="email"
             placeholder="Say Hello 👋"
             name="send-message-to-team"
@@ -45,7 +45,7 @@ function OurTeam() {
           </button>
         </div>
 
-        <div className="border-grey-20 relative flex flex-col items-center gap-2.5 rounded-lg border p-5">
+        <div className="border-grey-15 relative flex flex-col items-center gap-2.5 rounded-lg border p-5">
           <img src={team2} alt="Max Mitchel, The Founder" width="100%" />
           <div className="relative flex flex-col items-center gap-4">
             <button
@@ -60,7 +60,7 @@ function OurTeam() {
             </p>
           </div>
           <input
-            className="bg-grey-10 border-grey-20 w-full rounded-full border px-5 py-4"
+            className="bg-grey-10 border-grey-15 w-full rounded-full border px-5 py-4"
             type="email"
             placeholder="Say Hello 👋"
             name="send-message-to-team"
@@ -75,7 +75,7 @@ function OurTeam() {
           </button>
         </div>
 
-        <div className="border-grey-20 relative flex flex-col items-center gap-2.5 rounded-lg border p-5">
+        <div className="border-grey-15 relative flex flex-col items-center gap-2.5 rounded-lg border p-5">
           <img
             src={team3}
             alt="Max Mitchel, The Founder"
@@ -95,7 +95,7 @@ function OurTeam() {
             </p>
           </div>
           <input
-            className="bg-grey-10 border-grey-20 w-full rounded-full border px-5 py-4"
+            className="bg-grey-10 border-grey-15 w-full rounded-full border px-5 py-4"
             type="email"
             placeholder="Say Hello 👋"
             name="send-message-to-team"
@@ -128,7 +128,7 @@ function OurTeam() {
             <p className="text-grey-60 text-[15px]">Legal Counsel</p>
           </div>
           <input
-            className="bg-grey-10 border-grey-20 w-full rounded-full border px-5 py-4"
+            className="bg-grey-10 border-grey-15 w-full rounded-full border px-5 py-4"
             type="email"
             placeholder="Say Hello 👋"
             name="send-message-to-team"
