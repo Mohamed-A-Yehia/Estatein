@@ -15,7 +15,7 @@ function LinkButton({ children, buttonType = "", to }: props) {
   return (
     <Link
       to={to}
-      className={`${color} cursor-pointer rounded-md p-3 text-center text-[16px] text-white sm:text-lg`}
+      className={`${color} block cursor-pointer rounded-md p-3 text-center text-[16px] text-white sm:text-lg`}
     >
       {children}
     </Link>
