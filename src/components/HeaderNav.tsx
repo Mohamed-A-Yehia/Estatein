@@ -7,19 +7,23 @@ function HeaderNav() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const activeLink: string =
     "bg-grey-08 border-grey-20 rounded-md border-1 px-5 py-2.5";
+  const handleCloseMenu = () => setShowMenu(false);
 
   return (
     <>
       <nav
         className={`${showMenu ? "absolute top-0 z-10 flex h-screen w-full items-center justify-center backdrop-blur-2xl" : ""} ${!showMenu && "hidden"} md:static md:block md:h-fit md:w-fit md:backdrop-blur-none`}
+        onClick={showMenu ? handleCloseMenu : undefined}
       >
         <ul
           className={`${showMenu && "flex-col"} flex items-center gap-6 md:flex-row`}
+          onClick={(e) => e.stopPropagation()}
         >
           <li>
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? activeLink : "")}
+              onClick={handleCloseMenu}
             >
               Home
             </NavLink>
@@ -28,6 +32,7 @@ function HeaderNav() {
             <NavLink
               to="/aboutus"
               className={({ isActive }) => (isActive ? activeLink : "")}
+              onClick={handleCloseMenu}
             >
               About Us
             </NavLink>
@@ -36,6 +41,7 @@ function HeaderNav() {
             <NavLink
               to="/properties"
               className={({ isActive }) => (isActive ? activeLink : "")}
+              onClick={handleCloseMenu}
             >
               Properties
             </NavLink>
@@ -44,6 +50,7 @@ function HeaderNav() {
             <NavLink
               to="/services"
               className={({ isActive }) => (isActive ? activeLink : "")}
+              onClick={handleCloseMenu}
             >
               Services
             </NavLink>

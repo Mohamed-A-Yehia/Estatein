@@ -8,10 +8,12 @@ function ReHeader() {
     <>
       <Announcement />
 
-      <header className="bg-grey-10 border-b-grey-20 flex h-23 items-center justify-between text-white sm:m-auto sm:border-b-1 md:px-3 lg:container">
-        <Logo />
-        <HeaderNav />
-        <CtaButton />
+      <header className="bg-grey-10 border-b-grey-15 border-b-1">
+        <div className="flex h-23 items-center justify-between text-white sm:m-auto md:px-3 lg:container">
+          <Logo />
+          <HeaderNav />
+          <CtaButton />
+        </div>
       </header>
     </>
   );
