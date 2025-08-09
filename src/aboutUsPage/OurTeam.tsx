@@ -13,11 +13,9 @@ interface TeamMember {
   image: string;
   imageAlt: string;
   imageClass?: string;
-  containerClass: string;
   twitterAriaLabel: string;
   inputId: string;
   inputAriaLabel: string;
-  sendButtonAriaLabel: string;
 }
 
 const teamMembers: TeamMember[] = [
@@ -26,25 +24,19 @@ const teamMembers: TeamMember[] = [
     title: "Founder",
     image: team1,
     imageAlt: "Max Mitchel, The Founder",
-    containerClass:
-      "border-grey-15 relative flex flex-col items-center gap-2.5 rounded-lg border p-5",
     twitterAriaLabel: "Go to Max Mitchell Twitter",
     inputId: "message-max",
     inputAriaLabel: "send message to Max Mitchell, The Founder",
-    sendButtonAriaLabel: "send email",
   },
   {
     name: "David Brown",
     title: "Head of Property Management",
     image: team2,
     imageAlt: "Max Mitchel, The Founder",
-    containerClass:
-      "border-grey-15 relative flex flex-col items-center gap-2.5 rounded-lg border p-5",
     twitterAriaLabel: "Go to Max Mitchell Twitter",
     inputId: "message-David",
     inputAriaLabel:
       "send message to Max David, The Head of Property Management",
-    sendButtonAriaLabel: "send the message",
   },
   {
     name: "Sarah Johanson",
@@ -52,12 +44,9 @@ const teamMembers: TeamMember[] = [
     image: team3,
     imageAlt: "Max Mitchel, The Founder",
     imageClass: "rounded-lg",
-    containerClass:
-      "border-grey-15 relative flex flex-col items-center gap-2.5 rounded-lg border p-5",
     twitterAriaLabel: "Go to Max Mitchell Twitter",
     inputId: "message-Sarah",
     inputAriaLabel: "send message to Sarah, the Cheif Real Estate Officer",
-    sendButtonAriaLabel: "send the message",
   },
   {
     name: "Michael Turner",
@@ -65,12 +54,9 @@ const teamMembers: TeamMember[] = [
     image: team4,
     imageAlt: "Max Mitchel, The Founder",
     imageClass: "rounded-lg",
-    containerClass:
-      "border-grey-20 relative flex flex-col items-center gap-2.5 rounded-lg border p-5",
     twitterAriaLabel: "Go to Max Mitchell Twitter",
     inputId: "message-Michael",
     inputAriaLabel: "send message to Michael Turner, Legal Counsel",
-    sendButtonAriaLabel: "send the message",
   },
 ];
 
@@ -91,13 +77,14 @@ function OurTeam() {
             image,
             imageAlt,
             imageClass,
-            containerClass,
             twitterAriaLabel,
             inputId,
             inputAriaLabel,
-            sendButtonAriaLabel,
           }) => (
-            <div className={containerClass} key={name}>
+            <div
+              className="border-grey-15 relative flex flex-col items-center gap-2.5 rounded-lg border p-5"
+              key={name}
+            >
               <img
                 src={image}
                 alt={imageAlt}
@@ -124,7 +111,7 @@ function OurTeam() {
               />
               <button
                 className="bg-primary-60 absolute right-7 bottom-6.5 cursor-pointer rounded-full p-2 text-white"
-                aria-label={sendButtonAriaLabel}
+                aria-label="send the message"
               >
                 <IoIosSend size={30} />
               </button>
