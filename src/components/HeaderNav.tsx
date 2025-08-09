@@ -7,6 +7,7 @@ function HeaderNav() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const activeLink: string =
     "bg-grey-08 border-grey-20 rounded-md border-1 px-5 py-2.5";
+
   const handleCloseMenu = () => setShowMenu(false);
 
   return (

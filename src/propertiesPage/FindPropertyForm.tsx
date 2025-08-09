@@ -134,7 +134,7 @@ function FindPropertyForm() {
           <legend className="mb-2.5">Preferred Contact Method</legend>
           <div className="bg-grey-10 border-grey-15 text-grey-60 flex items-center justify-between rounded-lg border p-2.5 lg:min-w-1/2">
             <MdPhone />
-            <label htmlFor="contact-phone" className="ml-2.5">
+            <label htmlFor="contact-phone" className="ml-2.5 w-full">
               Phone
             </label>
             <input type="radio" name="contact" id="contact-phone" />
@@ -142,7 +142,7 @@ function FindPropertyForm() {
 
           <div className="bg-grey-10 border-grey-15 text-grey-60 flex items-center justify-between rounded-lg border p-2.5 lg:min-w-1/2">
             <MdEmail />
-            <label htmlFor="contact-email" className="ml-2.5">
+            <label htmlFor="contact-email" className="ml-2.5 w-full">
               Email
             </label>
             <input
