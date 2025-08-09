@@ -7,7 +7,7 @@ import AppLayout from "./components/AppLayout";
 import Error from "./components/Error";
 
 import { lazy } from "react";
-import PropertiesDetails from "./propertiesPage/PropertiesDetails";
+import PropertiesDetails from "./propertyDetailsPage/PropertiesDetails";
 
 const Home = lazy(() => import("./home/Home"));
 const AboutUs = lazy(() => import("./aboutUsPage/AboutUs"));
