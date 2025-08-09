@@ -47,4 +47,4 @@ Sleek and modern real estate website designed to help users explore and find the
 └── main.tsx
 ```
 
-> Implemented Pages: Home - About Us.
+> Implemented Pages: Home - About Us - Properties.
