@@ -1,14 +1,15 @@
 import { Link } from "react-router";
+import type { ReactNode } from "react";
 
-type props = {
-  buttonType: string;
-  children: string;
+type NormalLinkProps = {
   to: string;
+  children: ReactNode;
+  className?: string;
 };
 
-function NormalLink({ children, to = "" }: props) {
+function NormalLink({ children, to = "", className = "" }: NormalLinkProps) {
   return (
-    <Link className="text-sm" to={to}>
+    <Link className={`text-sm ${className}`} to={to}>
       {children}
     </Link>
   );

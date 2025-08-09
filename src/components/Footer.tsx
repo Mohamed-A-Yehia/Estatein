@@ -5,6 +5,82 @@ import { IoIosSend } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
+type FooterLink = { label: string; to: string };
+type FooterColumnData = {
+  title: string;
+  links: FooterLink[];
+  className?: string;
+};
+
+const FOOTER_COLUMNS: FooterColumnData[] = [
+  {
+    title: "Home",
+    className:
+      "border-grey-15 flex flex-col gap-5 border-b pb-4 text-white sm:border-0",
+    links: [
+      { label: "Hero Section", to: "" },
+      { label: "Features", to: "" },
+      { label: "Properties", to: "" },
+      { label: "Testimonials", to: "" },
+      { label: "FAQ's", to: "" },
+    ],
+  },
+  {
+    title: "About Us",
+    className:
+      "border-grey-15 flex flex-col gap-5 border-b pb-4 text-white sm:border-0",
+    links: [
+      { label: "Our Story", to: "" },
+      { label: "Our Works", to: "" },
+      { label: "How It Works", to: "" },
+      { label: "Our Team", to: "" },
+      { label: "Our Clients", to: "" },
+    ],
+  },
+  {
+    title: "Properties",
+    className: "flex flex-col gap-5 pb-4 text-white",
+    links: [
+      { label: "Portfolio", to: "" },
+      { label: "Categories", to: "" },
+    ],
+  },
+  {
+    title: "Services",
+    className:
+      "border-grey-15 flex flex-col gap-5 border-b pb-4 text-white md:border-0",
+    links: [
+      { label: "Valuation Mastery", to: "" },
+      { label: "Strategic Marketing", to: "" },
+      { label: "Negotiation Wizardry", to: "" },
+      { label: "Closing Success", to: "" },
+      { label: "Property Management", to: "" },
+    ],
+  },
+  {
+    title: "Contact Us",
+    className:
+      "border-grey-15 mt-[-95px] flex flex-col gap-5 border-t border-b py-4 text-white sm:mt-0 sm:border-0 md:py-0",
+    links: [
+      { label: "Contact Form", to: "" },
+      { label: "Our Offices", to: "" },
+    ],
+  },
+];
+
+function FooterColumn({ title, links, className = "" }: FooterColumnData) {
+  return (
+    <div className={className}>
+      <p className="text-grey-60 font-medium">{title}</p>
+      {links.map((link) => (
+        <NormalLink key={`${title}-${link.label}`} to={link.to}>
+          {link.label}
+        </NormalLink>
+      ))}
+    </div>
+  );
+}
+
 function Footer() {
   return (
     <>
@@ -33,78 +109,14 @@ function Footer() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-5 self-start pt-10 text-white sm:grid-cols-5 sm:grid-rows-1">
-          <div className="border-grey-15 flex flex-col gap-5 border-b pb-4 text-white sm:border-0">
-            <p className="text-grey-60 font-medium">Home</p>
-            <NormalLink to="" buttonType="">
-              Hero Section
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Features
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Properties
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Testimonials
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              FAQ's
-            </NormalLink>
-          </div>
-          <div className="border-grey-15 flex flex-col gap-5 border-b pb-4 text-white sm:border-0">
-            <p className="text-grey-60 font-medium">About Us</p>
-            <NormalLink to="" buttonType="">
-              Our Story
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Our Works
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              How It Works
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Our Team
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Our Clients
-            </NormalLink>
-          </div>
-          <div className="flex flex-col gap-5 pb-4 text-white">
-            <p className="text-grey-60 font-medium">Properties</p>
-            <NormalLink to="" buttonType="">
-              Portfolio
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Categories
-            </NormalLink>
-          </div>
-          <div className="border-grey-15 flex flex-col gap-5 border-b pb-4 text-white md:border-0">
-            <p className="text-grey-60 font-medium">Services</p>
-            <NormalLink to="" buttonType="">
-              Valuation Mastery
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Strategic Marketing
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Negotiation Wizardry
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Closing Success
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Property Management
-            </NormalLink>
-          </div>
-          <div className="border-grey-15 mt-[-95px] flex flex-col gap-5 border-t border-b py-4 text-white sm:mt-0 sm:border-0 md:py-0">
-            <p className="text-grey-60 font-medium">Contact Us</p>
-            <NormalLink to="" buttonType="">
-              Contect Form
-            </NormalLink>
-            <NormalLink to="" buttonType="">
-              Our Offices
-            </NormalLink>
-          </div>
+          {FOOTER_COLUMNS.map((col) => (
+            <FooterColumn
+              key={col.title}
+              title={col.title}
+              links={col.links}
+              className={col.className}
+            />
+          ))}
         </div>
       </footer>
       <div className="bg-grey-10 flex flex-col items-center justify-center gap-3 py-5 text-center text-white">
