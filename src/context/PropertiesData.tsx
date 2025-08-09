@@ -14,6 +14,9 @@ interface Property {
   bathrooms: number;
   area: string;
   type: string;
+  location: string;
+  sizeCategory: string;
+  buildYear: number;
 }
 
 interface PropertiesContextType {
