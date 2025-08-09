@@ -3,8 +3,6 @@ import { IoMdClose } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router";
 
-// relative m-auto flex min-h-screen w-full items-center justify-center font-normal text-white backdrop-blur-2xl sm:static sm:m-0 sm:block sm:min-h-fit sm:w-fit sm:px-3 sm:backdrop-blur-none
-
 function HeaderNav() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const activeLink: string =
