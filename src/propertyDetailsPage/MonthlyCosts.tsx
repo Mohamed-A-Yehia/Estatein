@@ -1,5 +1,19 @@
 import LinkButton from "../components/LinkButton";
 
+const monthlyCostsData = [
+  {
+    title: "Property Taxes",
+    amount: "$1.250",
+    description:
+      "Approximate monthly property tax based on the sale price and local rates",
+  },
+  {
+    title: "Homeowners' Association Fee",
+    amount: "$300",
+    description: "Monthly fee for common area maintenance and security",
+  },
+];
+
 function MonthlyCosts() {
   return (
     <div className="border-grey-15 divide-grey-15 flex flex-col gap-5 divide-y rounded-lg border p-5">
@@ -9,25 +23,17 @@ function MonthlyCosts() {
           Learn More
         </LinkButton>
       </div>
-      <div className="text-grey-60 flex flex-col gap-2.5 pb-5">
-        <p className="block">Property Taxes</p>
-        <div className="flex items-center gap-5">
-          <span className="text-white">$1.250</span>
-          <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5">
-            Approximate monthly property tax based on the sale price and local
-            rates
-          </p>
+      {monthlyCostsData.map((cost, index) => (
+        <div key={index} className="text-grey-60 flex flex-col gap-2.5 pb-5">
+          <p className="block">{cost.title}</p>
+          <div className="flex items-center gap-5">
+            <span className="text-white">{cost.amount}</span>
+            <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5">
+              {cost.description}
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="text-grey-60 flex flex-col gap-2.5 pb-5">
-        <p className="block">Homeowners' Association Fee</p>
-        <div className="flex items-center gap-5">
-          <span className="text-white">$300</span>
-          <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5">
-            Monthly fee for common area maintenance and security
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

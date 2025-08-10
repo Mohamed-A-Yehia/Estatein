@@ -5,7 +5,7 @@ import type { Property } from "../types/property";
 import HeroSection from "./HeroSection";
 import InquirySection from "./InquirySection";
 import PricingDetails from "./PricingDetails";
-import FaqSection from "../home/FaqSection";
+import FaqSection from "../components/FaqSection";
 import CtaSection from "../components/CtaSection";
 
 function PropertiesDetails() {

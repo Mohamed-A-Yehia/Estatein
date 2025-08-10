@@ -1,7 +1,7 @@
 import { BeatLoader } from "react-spinners";
 import SectionIntro from "../components/SectionIntro";
 import { useFaqs } from "../hooks/useFaqs";
-import Faqs from "./Faqs";
+import Faqs from "../home/Faqs";
 
 function FaqSection() {
   const { isLoading, data } = useFaqs();
