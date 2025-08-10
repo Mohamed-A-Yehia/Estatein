@@ -4,6 +4,9 @@ import { useProperties } from "../hooks/useProperties";
 import type { Property } from "../types/property";
 import HeroSection from "./HeroSection";
 import InquirySection from "./InquirySection";
+import PricingDetails from "./PricingDetails";
+import FaqSection from "../home/FaqSection";
+import CtaSection from "../components/CtaSection";
 
 function PropertiesDetails() {
   const { propertyId } = useParams();
@@ -21,6 +24,9 @@ function PropertiesDetails() {
     <>
       <HeroSection selectedProperty={selectedProperty} />
       <InquirySection selectedProperty={selectedProperty} />
+      <PricingDetails selectedProperty={selectedProperty} />
+      <FaqSection />
+      <CtaSection />
     </>
   );
 }
