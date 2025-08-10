@@ -1,23 +1,7 @@
 import axios from "axios";
 import type { ReactNode } from "react";
 import { createContext, useEffect, useState } from "react";
-
-interface Property {
-  id: string;
-  title: string;
-  tag: string;
-  shortDescription: string;
-  longDescription: string;
-  imageUrl: string;
-  price: string;
-  bedrooms: number;
-  bathrooms: number;
-  area: string;
-  type: string;
-  location: string;
-  sizeCategory: string;
-  buildYear: number;
-}
+import type { Property } from "../types/property";
 
 interface PropertiesContextType {
   data: Property[];
