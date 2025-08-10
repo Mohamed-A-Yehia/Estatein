@@ -7,16 +7,13 @@ interface InquirySectionProps {
 
 function InquirySection({ selectedProperty }: InquirySectionProps) {
   return (
-    <section className="container m-auto flex flex-col gap-10 px-4 py-8 text-white md:py-16 xl:px-16">
+    <section className="container m-auto flex flex-col gap-10 px-4 py-8 text-white md:py-16 lg:flex-row xl:px-16">
       <SectionIntro
         title={`Inquire About ${selectedProperty.title}`}
         description="Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have."
       />
 
-      <form
-        action=""
-        className="border-grey-15 grid gap-7 rounded-lg border p-5"
-      >
+      <form className="border-grey-15 grid gap-7 rounded-lg border p-5 lg:w-full">
         <div className="flex flex-col gap-2.5">
           <label htmlFor="First-name">First Name</label>
           <input

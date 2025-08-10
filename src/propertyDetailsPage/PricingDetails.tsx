@@ -17,23 +17,27 @@ function PricingDetails({ selectedProperty }: InquirySectionProps) {
         description="At Estatein, transparency is key. We want you to have a clear understanding of all costs associated with your property investment. Below, we break down the pricing for Seaside Serenity Villa to help you make an informed decision"
       />
 
-      <div className="border-grey-15 flex flex-col gap-5 rounded-lg border p-5">
-        <span className="border-grey-15 border-b pb-5 text-[20px]">Note</span>
+      <div className="border-grey-15 flex flex-col gap-5 rounded-lg border p-5 lg:flex-row lg:items-center">
+        <span className="border-grey-15 border-b pb-5 text-[20px] lg:border-0 lg:border-r-3 lg:pr-5 lg:pb-0">
+          Note
+        </span>
         <p className="text-grey-60">
           The figures provided above are estimates and may vary depending on the
           property, location, and individual circumstances.
         </p>
       </div>
 
-      <div className="flex flex-col gap-2.5">
-        <p className="text-grey-60">Listing Price</p>
-        <span className="text-2xl">{selectedProperty.price}</span>
-      </div>
+      <div className="grid gap-10">
+        <div className="">
+          <p className="text-grey-60 mb-2.5">Listing Price</p>
+          <span className="text-2xl">{selectedProperty.price}</span>
+        </div>
 
-      <AdditionalFees />
-      <MonthlyCosts />
-      <InitialCosts />
-      <MonthlyExpenses />
+        <AdditionalFees />
+        <MonthlyCosts />
+        <InitialCosts />
+        <MonthlyExpenses />
+      </div>
     </section>
   );
 }

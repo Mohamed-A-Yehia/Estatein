@@ -34,11 +34,11 @@ function MonthlyExpenses() {
       </div>
       {monthlyExpensesData.map((expense, index) => (
         <div key={index} className="text-grey-60 flex flex-col gap-2.5 pb-5">
-          <p className="block">{expense.title}</p>
+          <p className="text-sm md:text-[20px]">{expense.title}</p>
           <div className="flex items-center gap-5">
             <span className="text-white">{expense.amount}</span>
             {expense.description && (
-              <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5">
+              <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5 text-sm md:text-[20px]">
                 {expense.description}
               </p>
             )}

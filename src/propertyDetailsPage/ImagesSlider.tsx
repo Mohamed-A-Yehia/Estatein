@@ -7,8 +7,6 @@ interface ImagesSliderProps {
 }
 
 function ImagesSlider({ selectedProperty }: ImagesSliderProps) {
-  const [image, setImage] = useState<string>(selectedProperty.imageUrl);
-
   const imgs: string[] = [
     "/images/property-2.webp",
     "/images/property-3.webp",
@@ -16,9 +14,32 @@ function ImagesSlider({ selectedProperty }: ImagesSliderProps) {
     "/images/property-5.webp",
   ];
 
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const [image, setImage] = useState<string>(imgs[0]);
+
   function handleClick(e: React.MouseEvent) {
     const target = e.target as HTMLImageElement;
-    if (target.tagName === "IMG") setImage(target.src);
+    if (target.tagName === "IMG") {
+      const clickedIndex = imgs.indexOf(target.src);
+      if (clickedIndex !== -1) {
+        setCurrentImageIndex(clickedIndex);
+        setImage(target.src);
+      }
+    }
+  }
+
+  function goToPreviousImage() {
+    const newIndex =
+      currentImageIndex === 0 ? imgs.length - 1 : currentImageIndex - 1;
+    setCurrentImageIndex(newIndex);
+    setImage(imgs[newIndex]);
+  }
+
+  function goToNextImage() {
+    const newIndex =
+      currentImageIndex === imgs.length - 1 ? 0 : currentImageIndex + 1;
+    setCurrentImageIndex(newIndex);
+    setImage(imgs[newIndex]);
   }
 
   return (
@@ -26,7 +47,7 @@ function ImagesSlider({ selectedProperty }: ImagesSliderProps) {
       <div>
         <img src={image} className="w-full" alt={selectedProperty.title} />
       </div>
-      <div className="bg-grey-08 border-grey-15 flex items-center justify-between gap-2.5 rounded-lg border p-2.5">
+      <div className="bg-grey-08 border-grey-15 flex items-center justify-center gap-2.5 rounded-lg border p-2.5">
         {imgs.map((image, index) => (
           <img
             className="w-15 cursor-pointer"
@@ -38,16 +59,16 @@ function ImagesSlider({ selectedProperty }: ImagesSliderProps) {
         ))}
       </div>
       <div className="bg-grey-08 border-grey-15 flex items-center justify-between rounded-full border p-5">
-        <FaArrowLeft className="cursor-pointer" />
+        <FaArrowLeft className="cursor-pointer" onClick={goToPreviousImage} />
         <div className="flex items-center gap-2.5">
           {imgs.map((_, i) => (
             <span
               key={i}
-              className={`${imgs[i] === image ? "bg-primary-60" : "bg-grey-30"} h-0.5 w-5`}
+              className={`${i === currentImageIndex ? "bg-primary-60" : "bg-grey-30"} h-0.5 w-5`}
             ></span>
           ))}
         </div>
-        <FaArrowRight className="cursor-pointer" />
+        <FaArrowRight className="cursor-pointer" onClick={goToNextImage} />
       </div>
     </div>
   );

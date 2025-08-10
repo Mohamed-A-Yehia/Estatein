@@ -31,7 +31,7 @@ const additionalFeesData = [
 
 function AdditionalFees() {
   return (
-    <div className="border-grey-15 divide-grey-15 flex flex-col gap-5 divide-y rounded-lg border p-5">
+    <div className="border-grey-15 divide-grey-15 col-start-1 flex flex-col gap-5 divide-y rounded-lg border p-5">
       <div className="flex items-center justify-between pb-5">
         <p>Additional Fees</p>
         <LinkButton to="" buttonType="">
@@ -40,10 +40,10 @@ function AdditionalFees() {
       </div>
       {additionalFeesData.map((fee, index) => (
         <div key={index} className="text-grey-60 flex flex-col gap-2.5 pb-5">
-          <p className="block">{fee.title}</p>
+          <p className="text-sm md:text-[20px]">{fee.title}</p>
           <div className="flex items-center gap-5">
             <span className="text-white">{fee.amount}</span>
-            <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5">
+            <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5 text-sm md:text-[20px]">
               {fee.description}
             </p>
           </div>
