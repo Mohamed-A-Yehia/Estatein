@@ -17,17 +17,6 @@ function ImagesSlider({ selectedProperty }: ImagesSliderProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   const [image, setImage] = useState<string>(imgs[0]);
 
-  function handleClick(e: React.MouseEvent) {
-    const target = e.target as HTMLImageElement;
-    if (target.tagName === "IMG") {
-      const clickedIndex = imgs.indexOf(target.src);
-      if (clickedIndex !== -1) {
-        setCurrentImageIndex(clickedIndex);
-        setImage(target.src);
-      }
-    }
-  }
-
   function goToPreviousImage() {
     const newIndex =
       currentImageIndex === 0 ? imgs.length - 1 : currentImageIndex - 1;
@@ -54,7 +43,10 @@ function ImagesSlider({ selectedProperty }: ImagesSliderProps) {
             src={image}
             alt={`${selectedProperty.title} - Image ${index + 1}`}
             key={index}
-            onClick={handleClick}
+            onClick={() => {
+              setCurrentImageIndex(index);
+              setImage(image);
+            }}
           />
         ))}
       </div>
