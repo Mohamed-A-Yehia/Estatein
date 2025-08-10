@@ -103,7 +103,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone [https://github.com/Mohamed-A-Yehia/Estatein]
 
 # Navigate to project directory
 cd estatein
