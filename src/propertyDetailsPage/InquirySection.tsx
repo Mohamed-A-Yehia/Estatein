@@ -66,17 +66,25 @@ function InquirySection({ selectedProperty }: InquirySectionProps) {
             className="placeholder:text-grey-60 border-grey-15 bg-grey-10 h-30 rounded-lg border p-3"
           />
         </div>
-        <div className="text-grey-60 flex gap-2.5 text-sm">
-          <input
-            required
-            type="checkbox"
-            id="check-terms"
-            aria-label="check terms"
-            className="placeholder:text-grey-60 border-grey-15 bg-grey-10 rounded-lg border p-3"
-          />
-          <label htmlFor="check-terms">
-            I agree with Terms of Use and Privacy Policy
-          </label>
+        <div className="text-grey-60 flex flex-col justify-between gap-5 text-[15px] sm:flex-row md:items-center md:text-lg">
+          <div>
+            <input
+              required
+              type="checkbox"
+              id="check-terms"
+              aria-label="check terms"
+              className="placeholder:text-grey-60 border-grey-15 bg-grey-10 mr-2.5 rounded-lg border p-3"
+            />
+            <label htmlFor="check-terms">
+              I agree with Terms of Use and Privacy Policy
+            </label>
+          </div>
+          <button
+            type="submit"
+            className="bg-primary-60 rounded-lg p-4 text-[20px] font-semibold text-white md:text-lg"
+          >
+            Send Your Message
+          </button>
         </div>
       </form>
     </section>
