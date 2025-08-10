@@ -26,8 +26,8 @@ const initialCostsData = [
 function InitialCosts() {
   return (
     <div className="border-grey-15 divide-grey-15 flex flex-col gap-5 divide-y rounded-lg border p-5">
-      <div className="flex items-center justify-between pb-5">
-        <p>Total Initial Costs</p>
+      <div className="flex items-center justify-between pb-5 text-[15px] md:text-lg">
+        <p className="text-[20px] md:text-2xl">Total Initial Costs</p>
         <LinkButton to="" buttonType="">
           Learn More
         </LinkButton>

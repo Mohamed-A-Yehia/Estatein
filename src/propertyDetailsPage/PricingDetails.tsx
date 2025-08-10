@@ -18,10 +18,10 @@ function PricingDetails({ selectedProperty }: InquirySectionProps) {
       />
 
       <div className="border-grey-15 flex flex-col gap-5 rounded-lg border p-5 lg:flex-row lg:items-center">
-        <span className="border-grey-15 border-b pb-5 text-[20px] lg:border-0 lg:border-r-3 lg:pr-5 lg:pb-0">
+        <span className="border-grey-15 border-b pb-5 text-[15px] font-semibold md:text-lg lg:border-0 lg:border-r-3 lg:pr-5 lg:pb-0">
           Note
         </span>
-        <p className="text-grey-60">
+        <p className="text-grey-60 text-[15px] md:text-lg">
           The figures provided above are estimates and may vary depending on the
           property, location, and individual circumstances.
         </p>

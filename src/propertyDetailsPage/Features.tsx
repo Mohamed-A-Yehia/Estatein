@@ -8,12 +8,14 @@ const featuers = [
 
 function Features() {
   return (
-    <div className="text-grey-60 border-grey-15 flex flex-col gap-5 rounded-lg border p-5">
-      <h1 className="text-[20px] text-white">Key Features and Amenities</h1>
+    <div className="text-grey-60 border-grey-15 flex w-full flex-col gap-5 rounded-lg border p-5">
+      <h1 className="text-[15px] text-white md:text-2xl">
+        Key Features and Amenities
+      </h1>
       {featuers.map((featuer) => (
         <p
           key={featuer}
-          className="border-primary-60 bg-grey-10 border-l-2 p-2.5"
+          className="border-primary-60 bg-grey-10 border-l-2 p-2.5 text-[15px] md:text-lg"
         >
           {featuer}
         </p>

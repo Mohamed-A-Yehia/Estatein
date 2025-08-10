@@ -31,9 +31,9 @@ const additionalFeesData = [
 
 function AdditionalFees() {
   return (
-    <div className="border-grey-15 divide-grey-15 col-start-1 flex flex-col gap-5 divide-y rounded-lg border p-5">
+    <div className="border-grey-15 divide-grey-15 col-start-1 flex flex-col gap-5 divide-y rounded-lg border p-5 text-[15px] md:text-lg">
       <div className="flex items-center justify-between pb-5">
-        <p>Additional Fees</p>
+        <p className="text-[20px] md:text-2xl">Additional Fees</p>
         <LinkButton to="" buttonType="">
           Learn More
         </LinkButton>
@@ -43,7 +43,7 @@ function AdditionalFees() {
           <p className="text-sm md:text-[20px]">{fee.title}</p>
           <div className="flex items-center gap-5">
             <span className="text-white">{fee.amount}</span>
-            <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5 text-sm md:text-[20px]">
+            <p className="bg-grey-10 border-grey-15 rounded-lg border p-2.5">
               {fee.description}
             </p>
           </div>
