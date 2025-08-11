@@ -1,4 +1,3 @@
-import axios from "axios";
 import { createContext, useEffect, useState, type ReactNode } from "react";
 
 interface Testimonials {
@@ -11,34 +10,45 @@ interface Testimonials {
 interface TestimonialsContextType {
   data: Testimonials[];
   isLoading: boolean;
+  error: string | null;
 }
 
 const TestimonialsContext = createContext<TestimonialsContextType | null>(null);
 
 function TestimonialsData({ children }: { children: ReactNode }) {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Testimonials[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    try {
-      axios
-        .get("/data/testimonial.json")
-        .then((response) => {
-          setData(response.data.testimonials);
-        })
-        .catch((error) => {
-          console.error(`ERROR: ${error}`);
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
-    } catch (error) {
-      throw new Error(`ERROR: ${error}`);
-    }
+    let isMounted = true;
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data/testimonial.json");
+        const data = await response.json();
+        if (isMounted) setData(data.testimonials);
+      } catch (err: unknown) {
+        if (isMounted) {
+          let errorMessage = "Failed to load Testimonials: Unknown error";
+          if (err instanceof Error) {
+            errorMessage = `Failed to load Testimonials: ${err.message}`;
+          }
+          setError(errorMessage);
+        }
+      } finally {
+        if (isMounted) setIsLoading(false);
+      }
+    };
+
+    fetchData();
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (
-    <TestimonialsContext.Provider value={{ data, isLoading }}>
+    <TestimonialsContext.Provider value={{ data, isLoading, error }}>
       {children}
     </TestimonialsContext.Provider>
   );

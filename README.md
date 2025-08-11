@@ -93,11 +93,6 @@ src/
 
 ## 🛠️ Getting Started
 
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn package manager
-
 ### Installation
 
 ```bash

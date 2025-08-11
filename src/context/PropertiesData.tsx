@@ -1,4 +1,3 @@
-import axios from "axios";
 import type { ReactNode } from "react";
 import { createContext, useEffect, useState } from "react";
 import type { Property } from "../types/property";
@@ -15,21 +14,26 @@ function DataProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    try {
-      axios
-        .get("/data/properties.json")
-        .then((response) => {
-          setData(response.data.properties);
-        })
-        .catch((error) => {
+    let isMounted = true;
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data/properties.json");
+        const data = await response.json();
+        if (isMounted) setData(data.properties);
+      } catch (error) {
+        if (isMounted) {
           console.error(`ERROR: ${error}`);
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
-    } catch (error) {
-      throw new Error(`ERROR: ${error}`);
-    }
+        }
+      } finally {
+        if (isMounted) setIsLoading(false);
+      }
+    };
+
+    fetchData();
+
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (

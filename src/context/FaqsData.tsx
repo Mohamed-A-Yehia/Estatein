@@ -1,4 +1,3 @@
-import axios from "axios";
 import { createContext, useEffect, useState, type ReactNode } from "react";
 
 interface Faqs {
@@ -23,8 +22,9 @@ function FaqsProvider({ children }: { children: ReactNode }) {
     let isMounted = true;
     const fetchData = async () => {
       try {
-        const response = await axios.get("/data/faqs.json");
-        if (isMounted) setData(response.data.faqs);
+        const response = await fetch("/data/faqs.json");
+        const data = await response.json();
+        if (isMounted) setData(data.faqs);
       } catch (err: unknown) {
         if (isMounted) {
           let errorMessage = "Failed to load FAQs: Unknown error";
