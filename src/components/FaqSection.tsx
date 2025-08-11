@@ -1,7 +1,7 @@
-import { BeatLoader } from "react-spinners";
 import SectionIntro from "../components/SectionIntro";
 import { useFaqs } from "../hooks/useFaqs";
 import Faqs from "../home/Faqs";
+import LoadingSpinner from "./LoadingSpinner";
 
 function FaqSection() {
   const { isLoading, data } = useFaqs();
@@ -13,11 +13,7 @@ function FaqSection() {
         description="Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way."
       />
 
-      {isLoading ? (
-        <BeatLoader color="#7520E9" size={50} />
-      ) : (
-        <Faqs faqs={data} />
-      )}
+      {isLoading ? <LoadingSpinner /> : <Faqs faqs={data} />}
     </section>
   );
 }

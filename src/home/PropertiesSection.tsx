@@ -1,7 +1,7 @@
+import LoadingSpinner from "../components/LoadingSpinner";
 import PropertiesLists from "../components/PropertiesLists";
 import SectionIntro from "../components/SectionIntro";
 import { useProperties } from "../hooks/useProperties";
-import { BeatLoader } from "react-spinners";
 
 function PropertiesSection() {
   const { isLoading } = useProperties();
@@ -15,11 +15,7 @@ function PropertiesSection() {
           through Estatein."
       />
 
-      {isLoading ? (
-        <BeatLoader color="#7520E9" size={100} />
-      ) : (
-        <PropertiesLists />
-      )}
+      {isLoading ? <LoadingSpinner /> : <PropertiesLists />}
     </section>
   );
 }

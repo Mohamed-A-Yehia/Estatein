@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Suspense } from "react";
+import LoadingSpinner from "./LoadingSpinner";
 
 function AppLayout() {
   return (
@@ -9,11 +10,7 @@ function AppLayout() {
       <Header />
 
       <main>
-        <Suspense
-          fallback={
-            <div className="text-center text-4xl text-white">Loading</div>
-          }
-        >
+        <Suspense fallback={<LoadingSpinner fallback={true} />}>
           <Outlet />
         </Suspense>
       </main>
