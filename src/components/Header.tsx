@@ -1,7 +1,6 @@
 import Announcement from "./Announcement";
 import Logo from "./Logo";
 import HeaderNav from "./HeaderNav";
-import CtaButton from "./CtaButton";
 
 function ReHeader() {
   return (
@@ -12,7 +11,6 @@ function ReHeader() {
         <div className="flex h-23 items-center justify-between text-white sm:m-auto md:px-3 lg:container">
           <Logo />
           <HeaderNav />
-          <CtaButton />
         </div>
       </header>
     </>

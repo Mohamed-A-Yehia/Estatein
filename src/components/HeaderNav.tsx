@@ -13,7 +13,7 @@ function HeaderNav() {
   return (
     <>
       <nav
-        className={`${showMenu ? "absolute top-0 z-10 flex h-screen w-full items-center justify-center backdrop-blur-2xl" : ""} ${!showMenu && "hidden"} md:static md:block md:h-fit md:w-fit md:backdrop-blur-none`}
+        className={`${showMenu ? "absolute top-0 z-10 flex h-screen w-full items-center justify-center backdrop-blur-2xl" : ""} ${!showMenu && "hidden"} sm:block md:static md:h-fit md:w-fit md:backdrop-blur-none`}
         onClick={showMenu ? handleCloseMenu : undefined}
       >
         <ul
