@@ -97,7 +97,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone [https://github.com/Mohamed-A-Yehia/Estatein]
+git clone https://github.com/Mohamed-A-Yehia/Estatein
 
 # Navigate to project directory
 cd estatein
