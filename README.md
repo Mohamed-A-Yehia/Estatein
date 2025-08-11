@@ -2,6 +2,8 @@
 
 A modern, responsive real estate website built with React and TypeScript, featuring property listings, detailed property views, and a clean user interface.
 
+![Project Image](https://g.top4top.io/p_3510hcre41.jpg)
+
 ## 🚀 Tech Stack
 
 ### Core Technologies
