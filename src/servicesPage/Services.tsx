@@ -1,4 +1,7 @@
+import CtaSection from "../components/CtaSection";
 import HeroSection from "./HeroSection";
+import Investments from "./Investments";
+import OurEffortless from "./OurEffortless";
 import PropertyValue from "./PropertyValue";
 
 function Services() {
@@ -6,6 +9,9 @@ function Services() {
     <>
       <HeroSection />
       <PropertyValue />
+      <OurEffortless />
+      <Investments />
+      <CtaSection />
     </>
   );
 }
