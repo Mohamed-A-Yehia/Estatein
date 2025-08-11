@@ -13,7 +13,7 @@ function OurEffortless() {
         description="Owning a property should be a pleasure, not a hassle. Estatein's Property Management Service takes the stress out of property ownership."
       />
 
-      <div className="grid gap-5">
+      <div className="grid gap-5 lg:grid-cols-3">
         <div className="border-grey-15 rounded-lg border p-5">
           <div className="mb-2.5 flex items-center gap-5">
             <HiMiniSquaresPlus size={30} className="text-primary-65" />
@@ -65,13 +65,15 @@ function OurEffortless() {
           </p>
         </div>
 
-        <div className="border-grey-15 flex flex-col gap-5 rounded-lg border bg-[url('/images/images-bg.webp')] bg-cover bg-center p-5">
-          <p className="text-[20px] font-semibold md:text-2xl">
-            Experience Effortless Property Management
-          </p>
-          <LinkButton to="" buttonType="">
-            Learn More
-          </LinkButton>
+        <div className="border-grey-15 flex flex-col gap-5 rounded-lg border bg-[url('/images/images-bg.webp')] bg-cover bg-center p-5 lg:col-span-2 lg:-col-end-1">
+          <div className="flex flex-col justify-between gap-5 lg:flex-row">
+            <p className="text-[20px] font-semibold md:text-2xl">
+              Experience Effortless Property Management
+            </p>
+            <LinkButton to="" buttonType="">
+              Learn More
+            </LinkButton>
+          </div>
           <p className="text-grey-60 text-[15px] md:text-lg">
             Ready to experience hassle-free property management? Explore our
             Property Management Service categories and let us handle the
