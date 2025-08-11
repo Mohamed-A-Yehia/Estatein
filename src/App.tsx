@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { DataProvider } from "./context/PropertiesData";
-import { FaqsProvider } from "./context/FaqsData";
 import "./App.css";
 import AppLayout from "./components/AppLayout";
 import Error from "./components/Error";
@@ -30,9 +29,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <DataProvider>
-      <FaqsProvider>
-        <RouterProvider router={router} />
-      </FaqsProvider>
+      <RouterProvider router={router} />
     </DataProvider>
   );
 }
