@@ -4,6 +4,7 @@ import LinkButton from "../components/LinkButton";
 import PrevNextButtons from "../components/PrevNextButtons";
 import useDataSize from "../hooks/useDataSize";
 import { useProperties } from "../hooks/useProperties";
+import { useSearchParams } from "react-router";
 
 interface Property {
   id: string;
@@ -19,14 +20,27 @@ interface Property {
   type: string;
 }
 
-type props = {
+type Props = {
   tags?: boolean;
 };
 
-function PropertiesLists({ tags }: props) {
+function PropertiesLists({ tags }: Props) {
+  const [searchParams] = useSearchParams();
   const { data: properties } = useProperties();
+
+  const searchValue = searchParams.get("search-property")?.toLowerCase();
+  const items = searchValue
+    ? properties.filter((property) =>
+        property.title.toLowerCase().includes(searchValue),
+      )
+    : properties;
+
+  const displayedData = items || properties;
+
   const { index, maxIndex, start, visibleItems, setIndex } =
-    useDataSize<Property>(properties);
+    useDataSize<Property>(displayedData);
+
+  console.log(displayedData);
 
   return (
     <div className="text-white">

@@ -1,14 +1,12 @@
-import { BsFillBoxFill } from "react-icons/bs";
-import { FaRegCalendar } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import { HiBanknotes } from "react-icons/hi2";
 import { LuSearch } from "react-icons/lu";
-import { MdOutlineHomeWork } from "react-icons/md";
-import { RiArrowDownWideFill } from "react-icons/ri";
 
 function SearchForm() {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  }
+
   return (
-    <form className="mt-[-50px]">
+    <form className="mt-[-50px]" onSubmit={() => handleSubmit}>
       <div className="flex justify-center">
         <div className="bg-grey-10 relative mb-2.5 w-[100%] rounded-lg p-4 md:w-[80%] lg:mb-0">
           <input
@@ -28,88 +26,6 @@ function SearchForm() {
             <LuSearch size={30} />
             <span className="hidden lg:block">Find Property</span>
           </button>
-        </div>
-      </div>
-
-      <div className="bg-grey-10 center grid grid-cols-1 gap-5 rounded-md p-5 text-[15px] lg:grid-cols-5">
-        <div className="relative flex items-center justify-center">
-          <select
-            defaultValue="all"
-            name="select-location"
-            id="select-location"
-            aria-label="select location"
-            className="text-grey-60 bg-grey-08 outline-grey-60 border-grey-15 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
-          >
-            <option value="all">Location</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-          </select>
-          <FaLocationDot className="text-grey-30 absolute left-2 size-5" />
-          <RiArrowDownWideFill className="bg-grey-10 absolute right-2.5 size-7 rounded-full p-0.5" />
-        </div>
-
-        <div className="relative flex items-center justify-center">
-          <select
-            defaultValue="all"
-            name="select-Property-Type"
-            id="select-Property-Type"
-            aria-label="select Property Type"
-            className="text-grey-60 bg-grey-08 outline-grey-60 border-grey-15 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
-          >
-            <option value="all">Property Type</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-          </select>
-          <MdOutlineHomeWork className="text-grey-30 absolute left-2 size-5" />
-          <RiArrowDownWideFill className="bg-grey-10 absolute right-2.5 size-7 rounded-full p-0.5" />
-        </div>
-
-        <div className="relative flex items-center justify-center">
-          <select
-            defaultValue="all"
-            name="select-pricing-range"
-            id="select-pricing-range"
-            aria-label="select Property Type"
-            className="text-grey-60 bg-grey-08 outline-grey-60 border-grey-15 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
-          >
-            <option value="all">Pricing Range</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-          </select>
-          <HiBanknotes className="text-grey-30 absolute left-2 size-5" />
-          <RiArrowDownWideFill className="bg-grey-10 absolute right-2.5 size-7 rounded-full p-0.5" />
-        </div>
-
-        <div className="relative flex items-center justify-center">
-          <select
-            defaultValue="all"
-            name="select-Property-size"
-            id="select-Property-size"
-            aria-label="select Property Type"
-            className="text-grey-60 bg-grey-08 outline-grey-60 border-grey-15 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
-          >
-            <option value="all">Property Size</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-          </select>
-          <BsFillBoxFill className="text-grey-30 absolute left-2 size-5" />
-          <RiArrowDownWideFill className="bg-grey-10 absolute right-2.5 size-7 rounded-full p-0.5" />
-        </div>
-
-        <div className="relative flex items-center justify-center">
-          <select
-            defaultValue="all"
-            name="select-build-year"
-            id="select-build-year"
-            aria-label="select Property Type"
-            className="text-grey-60 bg-grey-08 outline-grey-60 border-grey-15 min-w-full appearance-none rounded-lg border-1 py-3 pl-8 focus:outline"
-          >
-            <option value="all">Build Year</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-          </select>
-          <RiArrowDownWideFill className="bg-grey-10 absolute right-2.5 size-7 rounded-full p-0.5" />
-          <FaRegCalendar className="text-grey-30 absolute left-2 size-5" />
         </div>
       </div>
     </form>
