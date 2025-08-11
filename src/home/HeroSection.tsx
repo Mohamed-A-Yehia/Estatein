@@ -1,9 +1,6 @@
-import { FaBuilding, FaHome } from "react-icons/fa";
 import heroDesktop from "../assets/hero-image.webp";
 import heroLaptop from "../assets/hero-laptop.webp";
 import heroPhone from "../assets/hero-phone.webp";
-import { FaTableCellsRowUnlock } from "react-icons/fa6";
-import { FiSun } from "react-icons/fi";
 import LinkButton from "../components/LinkButton";
 import Staticts from "../components/Staticts";
 import Info from "../components/Info";

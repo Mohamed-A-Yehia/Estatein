@@ -77,8 +77,7 @@ src/
 ├── aboutUsPage/          # About us page
 ├── propertiesPage/       # Properties listing page
 ├── propertyDetailsPage/  # Individual property page
-├── servicesPage/         # Services page (TO BE BUILT)
-├── contactUsPage/        # Contact page (TO BE BUILT)
+├── servicesPage/         # Services page
 ├── context/              # State management
 ├── hooks/                # Custom React hooks
 ├── types/                # TypeScript type definitions
