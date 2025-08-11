@@ -1,13 +1,43 @@
-import { useContext } from "react";
-import { TestimonialsContext } from "../context/TestimonialsData";
+import { useState, useEffect } from "react";
 
-export function useTestimonials() {
-  const context = useContext(TestimonialsContext);
+interface Testimonials {
+  name: string;
+  location: string;
+  rating: number;
+  testimonial: string;
+}
 
-  if (!context)
-    throw new Error(
-      "useTestimonials Must Be Used Witin A TestimonialsProvider",
-    );
+export function useTestimonial() {
+  const [data, setData] = useState<Testimonials[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
-  return context;
+  useEffect(() => {
+    let isMounted = true;
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data/testimonial.json");
+        const data = await response.json();
+        if (isMounted) setData(data.testimonials);
+      } catch (err: unknown) {
+        if (isMounted) {
+          let errorMessage = "Failed to load Testimonials: Unknown error";
+          if (err instanceof Error) {
+            errorMessage = `Failed to load Testimonials: ${err.message}`;
+          }
+          setError(errorMessage);
+        }
+      } finally {
+        if (isMounted) setIsLoading(false);
+      }
+    };
+
+    fetchData();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  return { data, isLoading, error };
 }

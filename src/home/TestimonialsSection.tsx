@@ -1,10 +1,10 @@
 import { BeatLoader } from "react-spinners";
 import SectionIntro from "../components/SectionIntro";
-import { useTestimonials } from "../hooks/useTestimonial";
 import Testimonials from "./Testimonials";
+import { useTestimonial } from "../hooks/useTestimonial";
 
 function TestimonialsSection() {
-  const { isLoading } = useTestimonials();
+  const { isLoading } = useTestimonial();
 
   return (
     <section className="border-grey-15 m-auto border-b p-5 pt-16 pb-1 lg:container">

@@ -1,7 +1,7 @@
 import PrevNextButtons from "../components/PrevNextButtons";
 import useDataSize from "../hooks/useDataSize";
 import { FaStar } from "react-icons/fa";
-import { useTestimonials } from "../hooks/useTestimonial";
+import { useTestimonial } from "../hooks/useTestimonial";
 
 type Testimonials = {
   name: string;
@@ -11,7 +11,7 @@ type Testimonials = {
 };
 
 function Testimonials() {
-  const { data: testimonials } = useTestimonials();
+  const { data: testimonials } = useTestimonial();
   const { index, maxIndex, start, visibleItems, setIndex } =
     useDataSize<Testimonials>(testimonials);
 

@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { TestimonialsData } from "./context/TestimonialsData";
 import { DataProvider } from "./context/PropertiesData";
 import { FaqsProvider } from "./context/FaqsData";
 import "./App.css";
@@ -31,11 +30,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <DataProvider>
-      <TestimonialsData>
-        <FaqsProvider>
-          <RouterProvider router={router} />
-        </FaqsProvider>
-      </TestimonialsData>
+      <FaqsProvider>
+        <RouterProvider router={router} />
+      </FaqsProvider>
     </DataProvider>
   );
 }
