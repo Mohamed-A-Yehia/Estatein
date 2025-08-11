@@ -40,8 +40,6 @@ function PropertiesLists({ tags }: Props) {
   const { index, maxIndex, start, visibleItems, setIndex } =
     useDataSize<Property>(displayedData);
 
-  console.log(displayedData);
-
   return (
     <div className="text-white">
       <div className="flex gap-4 transition-all duration-300">
