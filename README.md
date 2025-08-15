@@ -53,7 +53,6 @@ A modern, responsive real estate website built with React and TypeScript, featur
 ### Performance Optimizations
 
 - **Lazy Loading** - Route-based code splitting
-- **Memoization** - React.memo for expensive components
 - **Conditional Rendering** - Smart UI updates
 - **Image Optimization** - WebP format support
 
