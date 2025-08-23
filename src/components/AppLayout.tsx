@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Suspense } from "react";
 import LoadingSpinner from "./LoadingSpinner";
+import ScrollToTop from "./ScrollToTop";
 
 function AppLayout() {
   return (
@@ -11,6 +12,7 @@ function AppLayout() {
 
       <main>
         <Suspense fallback={<LoadingSpinner fallback={true} />}>
+          <ScrollToTop />
           <Outlet />
         </Suspense>
       </main>
