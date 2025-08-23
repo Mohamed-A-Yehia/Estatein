@@ -133,7 +133,7 @@ function Footer() {
           <a
             aria-label="Go To My GutHub"
             className="bg-grey-15 hover:bg-grey-20 rounded-full p-3"
-            href="https://github.com/Mohamed-A-Yehia"
+            href="https://github.com/Mohamed-Y0"
             target="_blank"
           >
             <FaGithubSquare />
